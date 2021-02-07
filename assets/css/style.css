@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(221, 213, 202);
+    background-color: rgb(252, 252, 252);
 }
 .nav-custom {
     background: rgb(63, 63, 63);
@@ -36,4 +36,19 @@ body {
 
 .right-col {
     margin-left: 25%;
+}
+
+.nav-custom a.active {
+    color: rgba(255, 255, 255, 0.534);
+}
+
+.p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.image-text {
+    margin-top: 8%;
 }
