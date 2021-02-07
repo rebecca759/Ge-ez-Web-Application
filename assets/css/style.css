@@ -3,8 +3,7 @@ body {
 }
 .nav-custom {
     background: rgb(63, 63, 63);
-    height: 50px;
-    margin-bottom: 2%;
+    height: 55px;
 }
 
 .nav-custom a {
@@ -16,26 +15,25 @@ body {
     color: rgba(255, 255, 255, 0.747);
 }
 
-.custom-brand {
-    font-size: 24px;
+.navbar-collapse a {
+    font-size: 18px;
 }
-
-#first-img {
-    margin-left: 25px;
-    color: white;
-    font-size: 65px;
-    margin-left: 75px;
-    margin-top: 0;
+.custom-brand {
+    font-size: 30px;
+    position: fixed;
+    top: 0;
 }
 
 .web-name {
     font-size: 70px;
-    margin-left: 350px;
-    margin-top: 10%;
     color: rgb(83, 83, 83);
 }
 
 .ps {
     font-size: 20px;
     color: rgb(110, 110, 110);
+}
+
+.right-col {
+    margin-left: 25%;
 }
