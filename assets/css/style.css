@@ -68,13 +68,8 @@ body {
 
 .learn-buttons {
     padding: 30px;
-    border-radius: 10%;
     margin-top: 10%;
     background-color: rgb(226, 226, 226);
-}
-
-.learn-buttons:hover {
-    background-color: rgb(216, 216, 216);
 }
 
 .container-fluid {
@@ -82,5 +77,47 @@ body {
 }
 
 .lock {
-    margin-right: 5%;
+    margin-left: -55px;
+    margin-right: 20px;
+    color: rgb(84, 89, 131);
+    font-size: 24px;
 }
+
+.footer {
+    margin-top: 10%;
+    background-color: rgb(197, 197, 197);
+   
+}
+
+.custom-carousel {
+    margin-left: 2%;
+}
+
+.btn-custom {
+    background-color: rgb(84, 108, 160);
+    color: white;
+    padding: 1% 2%;
+    border-radius: 10%;
+    font-size: 18px;
+}
+
+.btn-custom:hover {
+    color: white;
+    background-color: rgba(84, 108, 160, 0.719);
+}
+
+.footer-icon {
+    font-size: 25px;
+    color: rgb(139, 74, 74);
+}
+
+.ftr-txt-clr {
+    color: rgb(87, 87, 87);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.footer-color {
+    color: rgb(71, 71, 71);
+}
+
