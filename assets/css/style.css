@@ -1,3 +1,55 @@
-body{
-    background-image: url("../images/bg.jpg");
+
+body {
+    background-color: rgb(252, 252, 252);
+}
+.nav-custom {
+    background: rgb(156, 93, 33);
+    height: 55px;
+}
+
+.nav-custom a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-custom a:hover {
+    color: rgba(255, 255, 255, 0.747);
+}
+
+.navbar-collapse a {
+    font-size: 1.15rem;
+}
+.custom-brand {
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+}
+
+.web-name {
+    font-size: 70px;
+    color: rgb(83, 83, 83);
+}
+
+.ps {
+    font-size: 20px;
+    color: rgb(110, 110, 110);
+}
+
+.right-col {
+    margin-left: 25%;
+}
+
+.nav-custom a.active {
+    color: rgba(255, 255, 255, 0.534);
+}
+
+.p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.image-text {
+    margin-top: 8%;
 }
