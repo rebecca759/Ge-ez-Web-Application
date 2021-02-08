@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(252, 252, 252);
+    background-color: rgb(236, 236, 236);
 }
 .nav-custom {
     background: rgb(63, 63, 63);
@@ -48,7 +48,32 @@ body {
     line-height: 1.6;
 }
 
-
 .image-text {
-    margin-top: 8%;
+    margin-top: 10%;
 }
+
+
+.learn-icons {
+    font-size: 50px;
+    line-height: 50px;
+    background-color: rgb(65, 69, 102);
+    padding: 15px;
+    color: white;
+    border-radius: 50%;
+}
+
+.learn-p {
+    font-size: 18px;
+}
+
+.learn-buttons {
+    padding: 30px;
+    border-radius: 5%;
+    margin-top: 10%;
+}
+
+.container-fluid {
+    padding-left: 10%;
+}
+
+.background-learn
