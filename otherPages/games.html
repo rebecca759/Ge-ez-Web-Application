@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ትምህርት</title>
+    <title>የአእምሮ ጨዋታ</title>
     <!-- Bootsrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/svg" href="../assets/images/icon-africa.png" />
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/game.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <script src="../assets/js/game.js" charset="utf-8"></script>
 
 </head>
 <body>
@@ -40,19 +42,10 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
-        <div class="row ">
-            <div class="col-5 ms-5 ps-5 me-4 image-text">
-                <h1 class="fw-bold">ግዕዝ እንማር</h1>
-                <h4 class="fw-bold mt-3">የትምህርት ደረጃዎች ምን ያካትታሉ?</h4>
-                <p class="p mt-4">ትምህርት ግዕዝ እንማር ፋብሪካው በአማራ ክልል ቡሬ ከተማ የሚገኝ ሲሆን 4.5 ቢሊዮን ብር ወጪ እንደተደረገበትም ከድርጅቱ ያገኘነው መረጃ ይጠቁማል። የበላይነህ ክንዴ ግሩፕ አካል የሆነው ፌቤላ ኢንደስቱሪያል ኮምፕሌክስ በሙሉ አቅሙ ወደ ሥራ ሲገባ በቀን 1.5 ሚሊዮን ሊትር የዘይት ምርቶች ለኢትዮጵያ ገበያ የማቅረብ አቅም አለው ተብሏል። በኢትዮጵያ ያለውን ከፍተኛ የዘይት ምርት ፍላጎት ለማሟላት መንግሥት በውጪ ምንዛሬ፣ የዘይት ምርት ከውጪ ወደ አገር ውስጥ እያስገባ ይገኛል። </p>
-            </div>
-            <div class="col-5 mt-5">
-                <img class="img-fluid" src="../assets/images/students3.jpg" alt="students image">
-            </div>
-        </div>
-        
-    </div>
+    <h3>Score:<span id="result"></span></h3>
+
+  <div class="grid">
+  </div>
 
     <!-- Bootsrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
