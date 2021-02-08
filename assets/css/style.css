@@ -1,8 +1,8 @@
 body {
-    background-color: rgb(252, 252, 252);
+    background-color: rgb(236, 236, 236);
 }
 .nav-custom {
-    background: rgb(63, 63, 63);
+    background: rgb(156, 93, 33);
     height: 55px;
 }
 
@@ -48,7 +48,78 @@ body {
     line-height: 1.6;
 }
 
+.image-text {
+    margin-top: 10%;
+}
+
+
+.learn-icons {
+    font-size: 50px;
+    line-height: 50px;
+    background-color:rgb(118, 143, 6);
+    padding: 20px;
+    color: white;
+    border-radius: 50%;
+}
+
+.learn-p {
+    font-size: 18px;
+}
+
+.learn-buttons {
+    padding: 30px;
+    border-radius: 5%;
+    margin-top: 10%;
+}
+
+.container-fluid {
+    padding-left: 10%;
+}
 
 .image-text {
     margin-top: 8%;
 }
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+div>p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15%;
+    color: rgb(99, 74, 7);
+}
+
+div>img{
+    opacity: 0.7;
+}
+
+
+.learn-buttons {
+    padding: 30px;
+    border-radius: 5%;
+    margin-top: 6%;
+}
+
+div>a{
+    text-decoration: none;
+    text-decoration-color: none;
+    color: black;
+    
+}
+
+div>a:hover{
+    color: rgb(150, 114, 17);
+    text-decoration: none;
+}
+
+div>a.active{
+    color: rgb(118, 143, 6);
+}
+
+.custom-container {
+    margin-left: 6%;
+}
+
