@@ -128,4 +128,5 @@ h3 {
     padding: auto;
     position: relative;
     float: left;
+    background-attachment: fixed !important ;
 }
