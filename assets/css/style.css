@@ -166,3 +166,8 @@ h3 {
     text-align: justify;
 }
 
+.column_p img {
+    width: 50px;
+    float: left;
+    margin: 10px;
+}
