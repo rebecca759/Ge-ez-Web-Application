@@ -130,3 +130,39 @@ h3 {
     float: left;
     background-attachment: fixed !important ;
 }
+.explore {
+    background: #d6d6d6;
+    margin-top: 20%;
+    padding-top: 50px;
+    height: 250px;
+    clear: both;
+    background-attachment: fixed;
+
+}
+
+.ec {
+    width: 25%;
+}
+
+#ec1 {
+    position: relative;
+    float: left;
+    margin-left: 6.25%;
+}
+
+#ec3 {
+    position: relative;
+    float: left;
+    margin-left: 6.25%;
+}
+
+#ec2 {
+    position: relative;
+    float: left;
+    margin-left: 6.25%;
+}
+
+.column_p {
+    text-align: justify;
+}
+
