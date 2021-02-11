@@ -128,15 +128,16 @@ h3 {
     padding: auto;
     position: relative;
     float: left;
-    background-attachment: fixed !important ;
+   
 }
+#alpha{text-align: left;}
 .explore {
-    background: #d6d6d6;
-    margin-top: 20%;
+
+background-color: beige;
     padding-top: 50px;
     height: 250px;
     clear: both;
-    background-attachment: fixed;
+
 
 }
 
@@ -162,6 +163,14 @@ h3 {
     margin-left: 6.25%;
 }
 
+.border-line{
+    border-top: 1px solid lightgrey;
+  
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
 .column_p {
     text-align: justify;
 }
