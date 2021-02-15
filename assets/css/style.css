@@ -1,18 +1,53 @@
 body {
-    background-color: rgb(255, 255, 255);
-}
-.nav-custom {
-    background: rgb(75, 73, 71);
-    height: 55px;
+    background-color: #ffffff69;
+
 }
 
-.nav-custom a {
-    color: white;
-    text-decoration: none;
+.logo {
+    color: rgb(235, 235, 235);
+    font-size: 8vw;
+}
+
+.nav-custom {
+    background: rgb(255, 255, 255);
+    height: 55px;
+    border-bottom: rgba(187, 94, 28, 0.733) solid 2px;
 }
 
 .nav-custom a:hover {
-    color: rgba(255, 255, 255, 0.747);
+    color: white!important;
+    background: chocolate;
+}
+
+.nav-link {
+    color: rgb(83, 83, 83)!important;
+    font-weight: bold;
+}
+
+.learn-desc {
+    color: rgb(70, 70, 70);
+    margin-top: 5%;
+}
+
+.level1-desc {
+    margin-top: 10%;
+}
+
+.learn-desc-p {
+    color: rgb(78, 78, 78);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.learn-desc-icon {
+    margin-left: -20px;
+    color: rgb(163, 140, 140);
+    font-size: 20px;
+}
+
+.logo:hover {
+    color: rgb(235, 235, 235);
+    background: white;
 }
 
 .navbar-collapse a {
@@ -39,7 +74,8 @@ body {
 }
 
 .nav-custom a.active {
-    color: rgba(255, 255, 255, 0.534);
+    color: white!important;
+    background: chocolate;
 }
 
 .p {
@@ -50,6 +86,62 @@ body {
 
 .image-text {
     margin-top: 10%;
+}
+
+.learn-p {
+    font-size: 18px;
+}
+
+.learn-buttons {
+    padding: 30px;
+    margin-top: 10%;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5%;
+}
+
+.container-fluid {
+    padding-left: 10%;
+}
+
+.lock {
+    margin-left: -55px;
+    margin-right: 20px;
+    color: rgb(163, 108, 69);
+    font-size: 30px;
+}
+
+.footer {
+    margin-top: 10%;
+    background-color: rgb(214, 214, 214);
+   
+}
+
+.btn-custom {
+    border: solid 2px chocolate;
+    color: chocolate;
+    padding: 1% 5%;
+    border-radius: 10%;
+    font-size: 18px;
+}
+
+.btn-custom:hover {
+    color: white;
+    background-color: chocolate;
+}
+
+.footer-icon {
+    font-size: 25px;
+    color: rgb(170, 102, 53);
+}
+
+.ftr-txt-clr {
+    color: rgb(87, 87, 87);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.footer-color {
+    color: rgb(71, 71, 71);
 }
 
 
@@ -65,7 +157,7 @@ body {
 .learn-icons {
     font-size: 50px;
     line-height: 50px;
-    background-color:rgb(118, 143, 6);
+    background-color:rgb(184, 121, 76);
     padding: 20px;
     color: white;
     border-radius: 50%;
@@ -91,20 +183,14 @@ body {
 }
 
 .image-text {
-    margin-top: 8%;
+    margin-top: 12%;
 }
 
 .no-padding {
     padding-left: 0;
     padding-right: 0;
+
   }
-/*  index property      ................................................... */
-/* div>p{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 15%;
-    color: rgb(99,74,7);
-} */
 
 .logo {
     color: rgb(235, 235, 235);
@@ -114,6 +200,107 @@ body {
 .index-hp{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+div>a{
+    text-decoration: none;
+    text-decoration-color: none;
+    color: black;
+    
+}
+
+.custom-container {
+    margin-left: 6%;
+}
+
+#content_bar_title {
+    color: #000;
+    text-align: center;
+    font-family: "Calibri Light" !important;
+    margin-left: -5%;
+}
+.content_paragraph {
+    text-align: justify;
+}
+
+.column {
+    width: 25%;
+}
+
+#column_1 {
+    position: relative;
+    float: left;
+    margin-left: 20%;
+    margin-right: 2.5%;
+}
+
+#column_2 {
+    position: relative;
+    margin-right: 20%;
+    margin-left: 2.5%;
+    float: left;
+}
+
+#content_bar p,
+h3 {
+    font-family: "Calibri Light" !important;
+}
+
+.p1_image {
+    width: 100%;
+    height: 30%;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+#content_bar {
+    padding: auto;
+    position: relative;
+    float: left;
+   
+}
+
+#alpha {text-align: left;
+}
+
+.explore {
+
+background-color: beige;
+    padding-top: 50px;
+    height: 250px;
+    clear: both;
+
+}
+
+.ec {
+    width: 25%;
+}
+
+#ec1 {
+    position: relative;
+    float: left;
+    margin-left: 6.25%;
+}
+
+#ec3 {
+    position: relative;
+    float: left;
+    margin-left: 6.25%;
+}
+
+#ec2 {
+    position: relative;
+    float: left;
+    margin-left: 6.25%;
+}
+
+.border-line{
+    border-top: 1px solid lightgrey;
+  
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+=======
     margin-top: 15%;
     color: rgb(99,74,7);
 
@@ -141,10 +328,6 @@ body {
 
 }
 
-/* div>img{
-    opacity: 0.7;
-} */
-
 
 .index-buttons {
     padding: 30px;
@@ -157,26 +340,46 @@ div>a{
     text-decoration: none;
     text-decoration-color: none;
     color: black;
+
     
 }
-
-div>a:hover{
-    color: rgb(150, 114, 17);
-    text-decoration: none;
+.column_p {
+    text-align: justify;
 }
 
-div>a.active{
-    color: rgb(118, 143, 6);
+.column_p img {
+    width: 50px;
+    float: left;
+    margin: 10px;
 }
 
-.custom-container {
-    margin-left: 6%;
+.level_title {
+    color: rgb(107, 49, 7);
+}
+
+.active_tab {
+    background: rgb(179, 89, 26);
+    color: white;
+}
+
+.learn-nav {
+    font-size: 20px;
+}
+
+.custom-list {
+    border: 1px solid rgb(214, 214, 214);
+    padding: 10px;
+}
+
+.active-learn {
+    background: rgb(165, 112, 42);
+    color: white;   
 }
 
 .description{
     background-color: rgb(231, 231, 230);
 }
-/* --------------------------------------------------------------------------*/ 
+
 .lock {
     margin-right: 5%;
 }
