@@ -53,28 +53,188 @@
 
     <h1 class="level_title ml-5 pl-5 mt-5 mb-5">ደረጃ አንድ</h1>
 
-    <div class="row ml-5">
-        <div class="col-3">
-          <div class="list-group my-list" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action active-learn py-3 learn-nav" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">የግዕዝ ፊደላት</a>
-            <a class="list-group-item list-group-item-action py-3 learn-nav" id="list-profile-list text-center" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">የግዕዝ ቁጥሮች</a>
-            <a class="list-group-item list-group-item-action py-3 learn-nav" id="list-messages-list text-center" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">ወቅቶች በግዕዝ</a>
-            <a class="list-group-item list-group-item-action py-3 learn-nav" id="list-settings-list text-center" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">ቀናት በግዕዝ</a>
-            <a class="list-group-item list-group-item-action py-3 learn-nav" id="list-settings-list text-center" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">ፈተና</a>
-          </div>
-        </div>
-        <div class="col-8">
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                <p>ሀ ሁ ሂ ሃ ሄ ህ ሆ</p>
+    <div class="container">
+        <div class="row ml-5">
+            <div class="col-3 left-nav">
+              <div class="list-group my-list" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active-learn py-3 learn-nav" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">የግዕዝ ፊደላት</a>
+                <a class="list-group-item list-group-item-action py-3 learn-nav" id="list-profile-list text-center" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">የግዕዝ ቁጥሮች</a>
+                <a class="list-group-item list-group-item-action py-3 learn-nav" id="list-messages-list text-center" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">ቀናትና ወቅቶች በግዕዝ</a>
+                <a class="list-group-item list-group-item-action py-3 learn-nav" id="list-settings-list text-center" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">ወራት በግዕዝ</a>
+                <a class="list-group-item list-group-item-action py-3 learn-nav" id="list-test-list text-center" data-toggle="list" href="#list-test" role="tab" aria-controls="test">ፈተና</a>
+              </div>
             </div>
-            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">2</div>
-            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">3</div>
-            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">4</div>
+            <div class="col-8">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                    <h1 class="text-center title-learn mb-5">የግዕዝ ፊደላት</h1>
+                    <div class="letter-container py-5 mt-1 text-center">
+                        <div class="row mb-5">
+                            <div class="col">
+                                <h1 class="main-letter">ሀ</h1>
+                                <span class="letters mr-4 active-letter">ሀ</span>
+                                <span class="letters mr-4">ሁ</span>
+                                <span class="letters mr-4">ሂ</span>
+                                <span class="letters mr-4">ሃ</span>
+                                <span class="letters mr-4">ሄ</span>
+                                <span class="letters mr-4">ህ</span>
+                                <span class="letters">ሆ</span>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col">
+                                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <button type="button" class="btn btn-letters-active mr-5 px-3">ሀ</button>
+                                            <button type="button" class="btn btn-letters mr-5 px-3">ለ</button>
+                                            <button type="button" class="btn btn-letters mr-5 px-3">ሐ</button>
+                                            <button type="button" class="btn btn-letters mr-4 px-3">መ</button>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <button type="button" class="btn btn-letters mr-5 px-3">ሠ</button>
+                                            <button type="button" class="btn btn-letters mr-5 px-3">ረ</button>
+                                            <button type="button" class="btn btn-letters mr-5 px-3">ሰ</button>
+                                            <button type="button" class="btn btn-letters mr-4 px-3">ሸ</button>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <button type="button" class="btn btn-letters mr-5 px-3">ቀ</button>
+                                            <button type="button" class="btn btn-letters mr-5 px-3">በ</button>
+                                            <button type="button" class="btn btn-letters mr-5 px-3">ተ</button>
+                                            <button type="button" class="btn btn-letters mr-4 px-3">ቸ</button>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <button type="button" class="btn btn-letters mr-5 px-3">ኀ</button>
+                                            <button type="button" class="btn btn-letters mr-5 px-3">ነ</button>
+                                            <button type="button" class="btn btn-letters mr-5 px-3">ኘ</button>
+                                            <button type="button" class="btn btn-letters mr-4 px-3">አ</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <a href="#myCarousel" data-slide="prev">
+                                    <i class="fas fa-chevron-left custom-prev"></i>
+                                </a>
+                                <a href="#myCarousel" data-slide="next">
+                                    <i class="fas fa-chevron-right custom-next"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        
+                        <nav class="navbar navbar-light bg-light mt-5 search">
+                            <form class="form-inline">
+                              <input class="form-control mr-sm-2" type="search" placeholder="ፈልግ" aria-label="Search">
+                              <button class="btn btn-outline-custom my-2 my-sm-0" type="submit">ፈልግ</button>
+                            </form>
+                        </nav>
+
+                    </div>
+                </div>
+                <!-- Ge'ez Numbers -->
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                    <h1 class="text-center title-learn mb-5">የግዕዝ ቁጥሮች</h1>
+                    <div class="letter-container py-5 mt-1 text-center">
+                        <div class="row mb-5">
+                            <div class="col-md-3 ml-5 pl-5">
+                                <h1 class="main-letter ml-5 pl-5">፩</h1>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="number-desc">በአማርኛ፡ አንድ</p>
+                                <p class="number-desc2">በግዕዝ፡ አሀዱ</p>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col">
+                                <div id="numCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <button type="button" class="btn btn-letters-active mr-5 px-3">፩</button>
+                                            <button type="button" class="btn btn-letters mr-5 px-3">፪</button>
+                                            <button type="button" class="btn btn-letters mr-5 px-3">፫</button>
+                                            <button type="button" class="btn btn-letters mr-4 px-3">፬</button>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <button type="button" class="btn btn-letters mr-5 px-3">፭</button>
+                                            <button type="button" class="btn btn-letters mr-5 px-3">፮</button>
+                                            <button type="button" class="btn btn-letters mr-5 px-3">፯</button>
+                                            <button type="button" class="btn btn-letters mr-4 px-3">፰</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#numCarousel" data-slide="prev">
+                                    <i class="fas fa-chevron-left custom-prev"></i>
+                                </a>
+                                <a href="#numCarousel" data-slide="next">
+                                    <i class="fas fa-chevron-right custom-next"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <nav class="navbar navbar-light bg-light mt-5 search">
+                            <form class="form-inline">
+                              <input class="form-control mr-sm-2" type="search" placeholder="ፈልግ" aria-label="Search">
+                              <button class="btn btn-outline-custom my-2 my-sm-0" type="submit">ፈልግ</button>
+                            </form>
+                        </nav>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                    <h1 class="text-center title-learn mb-5">ቀናትና ወቅቶች በግዕዝ</h1>
+                    <div class="letter-container words">
+                        <h2 class="ml-4 light mt-4">ቀናት በግዕዝ</h2>
+                        <li class="ml-4 days mb-3">ሰኞ ፡ ሰኖዮ </li>
+                        <li class="ml-4 days mb-3">ሰኞ ፡ ሰኖዮ </li>
+                        <li class="ml-4 days mb-3">ሰኞ ፡ ሰኖዮ </li>
+                        <li class="ml-4 days mb-3">ሰኞ ፡ ሰኖዮ </li>
+                    </div>  
+
+                    <div class="letter-container words mt-5">
+                        <h2 class="ml-4 light mt-4">ቀናት በግዕዝ</h2>
+                        <li class="ml-4 days mb-3">ሰኞ ፡ ሰኖዮ </li>
+                        <li class="ml-4 days mb-3">ሰኞ ፡ ሰኖዮ </li>
+                        <li class="ml-4 days mb-3">ሰኞ ፡ ሰኖዮ </li>
+                        <li class="ml-4 days mb-3">ሰኞ ፡ ሰኖዮ </li>
+                    </div>  
+
+                </div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                    <h1 class="text-center title-learn mb-5">ወራት በግዕዝ</h1>
+
+                    <div class="months">
+                        <div class="ml-5">
+                            <h2 class="ml-4 light mt-4 mb-4">ወራት በግዕዝ</h2>
+                            <li class="ml-4 days mb-4">መስከረም ፡ ሰኖዮ </li>
+                            <li class="ml-4 days mb-4">ጥቅምት ፡ ሰኖዮ </li>
+                            <li class="ml-4 days mb-4">ህዳር ፡ ሰኖዮ </li>
+                            <li class="ml-4 days mb-4">ታህሳስ ፡ ሰኖዮ </li>
+                            <li class="ml-4 days mb-4">ጥር፡ ሰኖዮ </li>
+                            <li class="ml-4 days mb-4">ሰኞ ፡ ሰኖዮ </li>
+                            <li class="ml-4 days mb-4">ሰኞ ፡ ሰኖዮ </li>
+                            <li class="ml-4 days mb-4">ሰኞ ፡ ሰኖዮ </li>
+                            <li class="ml-4 days mb-4">ሰኞ ፡ ሰኖዮ </li>
+                            <li class="ml-4 days mb-4">ሰኞ ፡ ሰኖዮ </li>
+                            <li class="ml-4 days mb-4">ሰኞ ፡ ሰኖዮ </li>
+                        </div>
+                        
+                    </div>  
+                </div>
+                <div class="tab-pane fade" id="list-test" role="tabpanel" aria-labelledby="list-test-list">
+                    <h1 class="text-center title-learn mb-5">እራስህን ፈትን</h1>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-        
+            
+    </div>
+
+    
     <!-- Footer -->
     <div class="footer">
         <div class="container-fluid">

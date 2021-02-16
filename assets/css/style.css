@@ -4,8 +4,10 @@ body {
 }
 
 .logo {
-    color: rgb(235, 235, 235);
+    color: rgb(24, 24, 24);
     font-size: 8vw;
+    background-color: rgba(255, 255, 255, 0.13);
+    padding: 12% 33%;
 }
 
 .nav-custom {
@@ -43,11 +45,6 @@ body {
     margin-left: -20px;
     color: rgb(163, 140, 140);
     font-size: 20px;
-}
-
-.logo:hover {
-    color: rgb(235, 235, 235);
-    background: white;
 }
 
 .navbar-collapse a {
@@ -171,7 +168,7 @@ body {
     padding: 30px;
     border-radius: 10%;
     margin-top: 10%;
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(243, 243, 243);
 }
 
 .learn-buttons:hover {
@@ -191,11 +188,6 @@ body {
     padding-right: 0;
 
   }
-
-.logo {
-    color: rgb(235, 235, 235);
-    font-size: 8vw;
-}
 
 .index-hp{
     text-align: center;
@@ -300,7 +292,6 @@ background-color: beige;
     justify-content: center;
     align-items: center;
     width: 100%;
-=======
     margin-top: 15%;
     color: rgb(99,74,7);
 
@@ -429,12 +420,6 @@ h3 {
     float: left;
 }
 
-/*  footer */
-
-.footer-icon {
-    font-size: 25px;
-    color: rgb(139, 74, 74);
-}
 
 .ftr-txt-clr {
     color: rgb(87, 87, 87);
@@ -450,4 +435,98 @@ h3 {
     margin-top: 10%;
     background-color: rgb(214, 214, 214);
    
+}
+
+.btn-letters-active {
+    background-color: rgb(109, 69, 18);
+    color: white;
+    font-size: 20px;
+}
+
+.btn-letters {
+    border: rgb(109, 69, 18) solid 1px;
+    color: rgb(109, 69, 18);
+    font-size: 20px;
+}
+
+
+.main-letter {
+    color: rgb(95, 72, 42);
+    font-size: 200px;
+
+}
+
+.letters {
+    font-size: 40px;
+    color: rgb(105, 103, 103);
+}
+
+.left-nav {
+    margin-left: -15%;
+}
+
+.letter-container {
+    margin-left: 22%;
+    border: 2px solid rgba(139, 69, 19, 0.116);
+    border-radius: 5%;
+    width: 100%;
+}
+
+.btn-outline-custom {
+    border: rgb(151, 75, 31) solid 1.5px;
+    color: rgb(151, 75, 31);
+}
+
+.search {
+    margin-left: 55%;
+}
+
+.title-learn {
+    margin-top: -5%;
+}
+
+.number-desc {
+    margin-top: 25%;
+    margin-left: -20%;
+    font-size: 26px;
+    color: rgb(129, 123, 123);
+}
+
+.number-desc2 {
+    font-size: 26px;
+    color: gray;
+    margin-left: -20%;
+}
+
+.words {
+    background-color: rgba(210, 105, 30, 0.048);
+}
+
+.light {
+    color: rgb(58, 58, 58);
+}
+
+.days {
+    color: rgb(63, 63, 63);
+    font-size: 22px;
+}
+
+.months {
+    margin-left: 25%;
+    border: 2px solid rgba(139, 69, 19, 0.116);
+    border-radius: 5%;
+    width: 60%;
+    background-color: rgba(210, 105, 30, 0.048);
+}
+
+.custom-prev {
+    position: absolute;
+    left: 20%;
+    top: 23%;
+}
+
+.custom-next {
+    position: absolute;
+    left: 75%;
+    top: 23%;
 }
