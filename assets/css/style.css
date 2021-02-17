@@ -169,7 +169,7 @@ body {
     padding: 30px;
     border-radius: 10%;
     margin-top: 10%;
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(243, 243, 243);
 }
 
 .learn-buttons:hover {
@@ -438,6 +438,7 @@ h3 {
 }
 
 .btn-letters-active {
+    border: rgb(109, 69, 18) solid 1px;
     background-color: rgb(109, 69, 18);
     color: white;
     font-size: 20px;
@@ -475,6 +476,11 @@ h3 {
 .btn-outline-custom {
     border: rgb(151, 75, 31) solid 1.5px;
     color: rgb(151, 75, 31);
+}
+
+.btn-outline-custom:hover {
+    color: white;
+    background-color:rgb(151, 75, 31);
 }
 
 .search {
@@ -517,4 +523,16 @@ h3 {
     border-radius: 5%;
     width: 60%;
     background-color: rgba(210, 105, 30, 0.048);
+}
+
+.custom-prev {
+    position: absolute;
+    left: 20%;
+    top: 23%;
+}
+
+.custom-next {
+    position: absolute;
+    left: 75%;
+    top: 23%;
 }
