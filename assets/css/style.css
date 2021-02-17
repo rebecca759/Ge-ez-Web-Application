@@ -438,6 +438,7 @@ h3 {
 }
 
 .btn-letters-active {
+    border: rgb(109, 69, 18) solid 1px;
     background-color: rgb(109, 69, 18);
     color: white;
     font-size: 20px;
@@ -475,6 +476,11 @@ h3 {
 .btn-outline-custom {
     border: rgb(151, 75, 31) solid 1.5px;
     color: rgb(151, 75, 31);
+}
+
+.btn-outline-custom:hover {
+    color: white;
+    background-color:rgb(151, 75, 31);
 }
 
 .search {
