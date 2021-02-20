@@ -14,6 +14,11 @@ const letter_5 = document.querySelector('.letter-5');
 const letter_6 = document.querySelector('.letter-6');
 const letter_7 = document.querySelector('.letter-7');
 
+// get each descrption from HTML
+ const desc1 = document.querySelector('.number-desc');
+ const desc2 = document.querySelector('.number-desc2');
+
+
 let lists = list_item.children;
 let buttons = letter_buttons.children;
 
@@ -72,15 +77,23 @@ function changeButtons(e) {
             letter_7.innerHTML = "ሖ";
         }
 
-        else if (e.target.textContent == "ሠ") {
-            letter_1.innerHTML = "ሠ";
-            letter_2.innerHTML = "ሡ";
-            letter_3.innerHTML = "ሢ";
-            letter_4.innerHTML = "ሣ";
-            letter_5.innerHTML = "ሤ";
-            letter_6.innerHTML = "ሥ";
-            letter_7.innerHTML = "ሦ";
+        else if (e.target.textContent == "መ") {
+            letter_1.innerHTML = "መ";
+            letter_2.innerHTML = "ሙ";
+            letter_3.innerHTML = "መ";
+            letter_4.innerHTML = "ማ";
+            letter_5.innerHTML = "ሜ";
+            letter_6.innerHTML = "ም";
+            letter_7.innerHTML = "ሞ";
         }
+
+        else if (e.target.textContent == "2") {
+            desc1.innerHTML = "መ";
+            desc2.innerHTML = "ሙ";
+            
+        }
+
+        
 
         main_letter.innerHTML = e.target.textContent;
 
