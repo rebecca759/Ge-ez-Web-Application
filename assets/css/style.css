@@ -450,6 +450,12 @@ h3 {
     font-size: 20px;
 }
 
+.btn-letters:hover {
+    border: rgb(109, 69, 18) solid 1px;
+    background-color: rgb(109, 69, 18);
+    color: white;
+    font-size: 20px;
+}
 
 .main-letter {
     color: rgb(95, 72, 42);

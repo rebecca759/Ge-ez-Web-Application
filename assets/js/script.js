@@ -1,3 +1,11 @@
+import productdb, {
+    bulkcreate
+} from './module.js'
+
+const db = productdb("GeezDB",{
+    letters: `++id, letter1, letter2, letter3, letter4, letter5, letter6, letter7` 
+})
+
 //UI Vars
 const list_item = document.querySelector('.my-list');
 const letter_buttons = document.querySelector('.letter-list');
@@ -13,6 +21,68 @@ const letter_4 = document.querySelector('.letter-4');
 const letter_5 = document.querySelector('.letter-5');
 const letter_6 = document.querySelector('.letter-6');
 const letter_7 = document.querySelector('.letter-7');
+
+//Populate the database
+bulkcreate(db.letters, {
+    letter1: 'ሀ',
+    letter2: 'ሁ',
+    letter3: 'ሂ',
+    letter4: 'ሃ',
+    letter5: 'ሄ',
+    letter6: 'ህ',
+    letter7: 'ሆ'
+})
+
+bulkcreate(db.letters, {
+    letter1: 'ለ',
+    letter2: 'ሉ',
+    letter3: 'ሊ',
+    letter4: 'ላ',
+    letter5: 'ሌ',
+    letter6: 'ል',
+    letter7: 'ሎ'
+})
+
+bulkcreate(db.letters, {
+    letter1: 'ሐ',
+    letter2: 'ሑ',
+    letter3: 'ሒ',
+    letter4: 'ሓ',
+    letter5: 'ሔ',
+    letter6: 'ሕ',
+    letter7: 'ሖ'
+})
+
+
+bulkcreate(db.letters, {
+    letter1: 'መ',
+    letter2: 'ሙ',
+    letter3: 'ሚ',
+    letter4: 'ማ',
+    letter5: 'ሜ',
+    letter6: 'ም',
+    letter7: 'ሞ'
+})
+
+bulkcreate(db.letters, {
+    letter1: 'ሠ',
+    letter2: 'ሡ',
+    letter3: 'ሢ',
+    letter4: 'ሣ',
+    letter5: 'ሤ',
+    letter6: 'ሥ',
+    letter7: 'ሦ'
+})
+
+bulkcreate(db.letters, {
+    letter1: 'ረ',
+    letter2: 'ሩ',
+    letter3: 'ሪ',
+    letter4: 'ራ',
+    letter5: 'ሬ',
+    letter6: 'ር',
+    letter7: 'ሮ'
+})
 
 let lists = list_item.children;
 let buttons = letter_buttons.children;
@@ -43,43 +113,63 @@ function changeButtons(e) {
         }
 
         if (e.target.textContent == "ሀ") {
-            letter_1.innerHTML = "ሀ";
-            letter_2.innerHTML = "ሁ";
-            letter_3.innerHTML = "ሂ";
-            letter_4.innerHTML = "ሃ";
-            letter_5.innerHTML = "ሄ";
-            letter_6.innerHTML = "ህ";
-            letter_7.innerHTML = "ሆ";
+            db.letters.get(1, function(firstRow) {
+                letter_1.innerHTML = firstRow['letter1'];
+                letter_2.innerHTML = firstRow['letter2'];
+                letter_3.innerHTML = firstRow['letter3'];
+                letter_4.innerHTML = firstRow['letter4'];
+                letter_5.innerHTML = firstRow['letter5'];
+                letter_6.innerHTML = firstRow['letter6'];
+                letter_7.innerHTML = firstRow['letter7'];
+            })
         }
 
         else if (e.target.textContent == "ለ") {
-            letter_1.innerHTML = "ለ";
-            letter_2.innerHTML = "ሉ";
-            letter_3.innerHTML = "ሊ";
-            letter_4.innerHTML = "ላ";
-            letter_5.innerHTML = "ሌ";
-            letter_6.innerHTML = "ል";
-            letter_7.innerHTML = "ሎ";
+            db.letters.get(2, function(secondRow) {
+                letter_1.innerHTML = secondRow['letter1'];
+                letter_2.innerHTML = secondRow['letter2'];
+                letter_3.innerHTML = secondRow['letter3'];
+                letter_4.innerHTML = secondRow['letter4'];
+                letter_5.innerHTML = secondRow['letter5'];
+                letter_6.innerHTML = secondRow['letter6'];
+                letter_7.innerHTML = secondRow['letter7'];
+            })  
         }
 
         else if (e.target.textContent == "ሐ") {
-            letter_1.innerHTML = "ሐ";
-            letter_2.innerHTML = "ሑ";
-            letter_3.innerHTML = "ሒ";
-            letter_4.innerHTML = "ሓ";
-            letter_5.innerHTML = "ሔ";
-            letter_6.innerHTML = "ሕ";
-            letter_7.innerHTML = "ሖ";
+            db.letters.get(3, function(thirdRow) {
+                letter_1.innerHTML = thirdRow['letter1'];
+                letter_2.innerHTML = thirdRow['letter2'];
+                letter_3.innerHTML = thirdRow['letter3'];
+                letter_4.innerHTML = thirdRow['letter4'];
+                letter_5.innerHTML = thirdRow['letter5'];
+                letter_6.innerHTML = thirdRow['letter6'];
+                letter_7.innerHTML = thirdRow['letter7'];
+            })
+        }
+
+        else if (e.target.textContent == "መ") {
+            db.letters.get(4, function(fourthRow) {
+                letter_1.innerHTML = fourthRow['letter1'];
+                letter_2.innerHTML = fourthRow['letter2'];
+                letter_3.innerHTML = fourthRow['letter3'];
+                letter_4.innerHTML = fourthRow['letter4'];
+                letter_5.innerHTML = fourthRow['letter5'];
+                letter_6.innerHTML = fourthRow['letter6'];
+                letter_7.innerHTML = fourthRow['letter7'];
+            })  
         }
 
         else if (e.target.textContent == "ሠ") {
-            letter_1.innerHTML = "ሠ";
-            letter_2.innerHTML = "ሡ";
-            letter_3.innerHTML = "ሢ";
-            letter_4.innerHTML = "ሣ";
-            letter_5.innerHTML = "ሤ";
-            letter_6.innerHTML = "ሥ";
-            letter_7.innerHTML = "ሦ";
+            db.letters.get(5, function(fifthRow) {
+                letter_1.innerHTML = fifthRow['letter1'];
+                letter_2.innerHTML = fifthRow['letter2'];
+                letter_3.innerHTML = fifthRow['letter3'];
+                letter_4.innerHTML = fifthRow['letter4'];
+                letter_5.innerHTML = fifthRow['letter5'];
+                letter_6.innerHTML = fifthRow['letter6'];
+                letter_7.innerHTML = fifthRow['letter7'];
+            })   
         }
 
         main_letter.innerHTML = e.target.textContent;
@@ -104,50 +194,60 @@ function searchLetters() {
 
     if (letter == "ሀ" || letter == "ሁ" || letter == "ሂ" || letter == "ሃ" || letter == "ሄ" || letter == "ህ" || letter == "ሆ") {
         $('#myCarousel').carousel(0);
-        main_letter.innerHTML = "ሀ";
-        letter_1.innerHTML = "ሀ";
-        letter_2.innerHTML = "ሁ";
-        letter_3.innerHTML = "ሂ";
-        letter_4.innerHTML = "ሃ";
-        letter_5.innerHTML = "ሄ";
-        letter_6.innerHTML = "ህ";
-        letter_7.innerHTML = "ሆ";
+        db.letters.get(1, function(rowOne) {
+            main_letter.innerHTML = rowOne['letter1'];
+            letter_1.innerHTML = rowOne['letter1'];
+            letter_2.innerHTML = rowOne['letter2'];
+            letter_3.innerHTML = rowOne['letter3'];
+            letter_4.innerHTML = rowOne['letter4'];
+            letter_5.innerHTML = rowOne['letter5'];
+            letter_6.innerHTML = rowOne['letter6'];
+            letter_7.innerHTML = rowOne['letter7'];
+        })  
     }
 
     else if (letter == "ለ" || letter == "ሉ" || letter == "ሊ" || letter == "ላ" || letter == "ሌ" || letter == "ል" || letter == "ሎ") {
         $('#myCarousel').carousel(0);
-        console.log('#myCarousel'.carousel(0).children);
-        main_letter.innerHTML = "ለ";
-        letter_1.innerHTML = "ለ";
-        letter_2.innerHTML = "ሉ";
-        letter_3.innerHTML = "ሊ";
-        letter_4.innerHTML = "ላ";
-        letter_5.innerHTML = "ሌ";
-        letter_6.innerHTML = "ል";
-        letter_7.innerHTML = "ሎ";
+        db.letters.get(2, function(rowTwo) {
+            main_letter.innerHTML = rowTwo['letter1'];
+            letter_1.innerHTML = rowTwo['letter1'];
+            letter_2.innerHTML = rowTwo['letter2'];
+            letter_3.innerHTML = rowTwo['letter3'];
+            letter_4.innerHTML = rowTwo['letter4'];
+            letter_5.innerHTML = rowTwo['letter5'];
+            letter_6.innerHTML = rowTwo['letter6'];
+            letter_7.innerHTML = rowTwo['letter7'];
+        })
     }
 
     else if (letter == "ሐ" || letter == "ሑ" || letter == "ሒ" || letter == "ሓ" || letter == "ሔ" || letter == "ሕ" || letter == "ሖ") {
-        main_letter.innerHTML = "ሐ";
-        letter_1.innerHTML = "ሐ";
-        letter_2.innerHTML = "ሑ";
-        letter_3.innerHTML = "ሒ";
-        letter_4.innerHTML = "ሓ";
-        letter_5.innerHTML = "ሔ";
-        letter_6.innerHTML = "ሕ";
-        letter_7.innerHTML = "ሖ";
+        $('#myCarousel').carousel(0);
+        db.letters.get(3, function(rowThree) {
+            main_letter.innerHTML = rowThree['letter1'];
+            letter_1.innerHTML = rowThree['letter1'];
+            letter_2.innerHTML = rowThree['letter2'];
+            letter_3.innerHTML = rowThree['letter3'];
+            letter_4.innerHTML = rowThree['letter4'];
+            letter_5.innerHTML = rowThree['letter5'];
+            letter_6.innerHTML = rowThree['letter6'];
+            letter_7.innerHTML = rowThree['letter7'];
+        })
     }
 
     else if (letter == "ረ" || letter == "ሩ" || letter == "ሪ" || letter == "ራ" || letter == "ሬ" || letter == "ር" || letter == "ሮ") {
         $('#myCarousel').carousel(1);
-        main_letter.innerHTML = "ረ";
-        letter_1.innerHTML = "ረ";
-        letter_2.innerHTML = "ሩ";
-        letter_3.innerHTML = "ሪ";
-        letter_4.innerHTML = "ራ";
-        letter_5.innerHTML = "ሬ";
-        letter_6.innerHTML = "ር";
-        letter_7.innerHTML = "ሮ";
+        db.letters.get(6, function(rowSix) {
+            main_letter.innerHTML = rowSix['letter1'];
+            letter_1.innerHTML = rowSix['letter1'];
+            letter_2.innerHTML = rowSix['letter2'];
+            letter_3.innerHTML = rowSix['letter3'];
+            letter_4.innerHTML = rowSix['letter4'];
+            letter_5.innerHTML = rowSix['letter5'];
+            letter_6.innerHTML = rowSix['letter6'];
+            letter_7.innerHTML = rowSix['letter7'];
+        })
+
+        console.log($('#myCarousel').carousel(1));
     }
 
 }
