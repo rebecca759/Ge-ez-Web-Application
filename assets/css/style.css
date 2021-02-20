@@ -453,10 +453,12 @@ h3 {
     font-size: 20px;
 }
 
-/*///////////////////////////////////////////////////////////*/
-
-
-
+.btn-letters:hover {
+    border: rgb(109, 69, 18) solid 1px;
+    background-color: rgb(109, 69, 18);
+    color: white;
+    font-size: 20px;
+}
 
 .main-letter {
     color: rgb(95, 72, 42);
@@ -547,6 +549,7 @@ h3 {
     left: 75%;
     top: 23%;
 }
+
 .about-ed{
     background-color:rgba(243, 233, 230, 0.877) ;
 }
@@ -568,3 +571,4 @@ h3 {
     width: 500px !important;
     height: 300px !important;
 }
+
