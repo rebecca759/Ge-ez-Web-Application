@@ -239,12 +239,7 @@ h3 {
     font-family: "Calibri Light" !important;
 }
 
-.p1_image {
-    width: 100%;
-    height: 30%;
-    border-radius: 50%;
-    margin-bottom: 30px;
-}
+
 
 #content_bar {
     padding: auto;
@@ -256,36 +251,7 @@ h3 {
 #alpha {text-align: left;
 }
 
-.explore {
 
-background-color: beige;
-    padding-top: 50px;
-    height: 250px;
-    clear: both;
-
-}
-
-.ec {
-    width: 25%;
-}
-
-#ec1 {
-    position: relative;
-    float: left;
-    margin-left: 6.25%;
-}
-
-#ec3 {
-    position: relative;
-    float: left;
-    margin-left: 6.25%;
-}
-
-#ec2 {
-    position: relative;
-    float: left;
-    margin-left: 6.25%;
-}
 .border-line{
     border-top: 1px solid lightgrey;
   
@@ -408,8 +374,8 @@ h3 {
 }
 
 .p1_image {
-    width: 100%;
-    height: 30%;
+    width: 50%;
+    height: 75%;
     border-radius: 50%;
     margin-bottom: 30px;
 }
@@ -418,6 +384,27 @@ h3 {
     padding: auto;
     position: relative;
     float: left;
+   
+}
+#alpha{text-align: left;}
+
+
+.border-line{
+    border-top: 1px solid lightgrey;
+  
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.column_p {
+    text-align: justify;
+}
+
+.column_p img {
+    width: 50px;
+    float: left;
+    margin: 10px;
 }
 
 
@@ -535,4 +522,25 @@ h3 {
     position: absolute;
     left: 75%;
     top: 23%;
+}
+.about-ed{
+    background-color:rgba(243, 233, 230, 0.877) ;
+}
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 500px;
+    height: 300px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 500px;
+    height: 300px;
+}
+
+.gmap_iframe {
+    width: 500px !important;
+    height: 300px !important;
 }
