@@ -84,6 +84,11 @@ bulkcreate(db.letters, {
     letter7: 'ሮ'
 })
 
+// get each descrption from HTML
+ const desc1 = document.querySelector('.number-desc');
+ const desc2 = document.querySelector('.number-desc2');
+
+
 let lists = list_item.children;
 let buttons = letter_buttons.children;
 
@@ -170,6 +175,7 @@ function changeButtons(e) {
                 letter_6.innerHTML = fifthRow['letter6'];
                 letter_7.innerHTML = fifthRow['letter7'];
             })   
+
         }
 
         main_letter.innerHTML = e.target.textContent;
