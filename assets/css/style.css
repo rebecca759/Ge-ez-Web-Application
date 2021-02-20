@@ -152,6 +152,21 @@ body {
     border-radius: 50%;
 }
 
+#indexnavLink{
+    text-decoration: none;
+    
+}
+#indexnavLink:active{
+    color: rgb(56, 94, 25);
+    text-decoration: none;
+}
+
+
+#indexnavLink:hover{
+    color: rgb(143, 100, 6);
+    text-decoration: none;
+}
+
 .learn-icons {
     font-size: 50px;
     line-height: 50px;
@@ -437,6 +452,7 @@ h3 {
    
 }
 
+/*///////////////////////////////////////////////////////////*/
 .btn-letters-active {
     border: rgb(109, 69, 18) solid 1px;
     background-color: rgb(109, 69, 18);
@@ -449,6 +465,10 @@ h3 {
     color: rgb(109, 69, 18);
     font-size: 20px;
 }
+
+/*///////////////////////////////////////////////////////////*/
+
+
 
 
 .main-letter {
@@ -485,6 +505,10 @@ h3 {
 
 .search {
     margin-left: 55%;
+}
+
+.search1{
+    margin-right: 55%;
 }
 
 .title-learn {
