@@ -3,8 +3,8 @@ import productdb, {
 } from './module.js'
 
 const db = productdb("GeezDB",{
-    letters: `++id, letter1, letter2, letter3, letter4, letter5, letter6, letter7` 
-})
+    letters: ++id, letter1, letter2, letter3, letter4, letter5, letter6, letter7, numbers: ++id, amharic, geez, numGeez
+});
 
 //UI Vars
 const list_item = document.querySelector('.my-list');
@@ -21,6 +21,12 @@ const letter_4 = document.querySelector('.letter-4');
 const letter_5 = document.querySelector('.letter-5');
 const letter_6 = document.querySelector('.letter-6');
 const letter_7 = document.querySelector('.letter-7');
+
+//UI Vars for numbers
+const numAmharic = document.querySelector('.numAmharic');
+const numGeez = document.querySelector('.numGeez');
+const num_buttons = document.querySelector('.num-list');
+const numMain = document.querySelector('.main_num');
 
 //Populate the database
 bulkcreate(db.letters, {
@@ -84,9 +90,29 @@ bulkcreate(db.letters, {
     letter7: 'ሮ'
 })
 
-// get each descrption from HTML
- const desc1 = document.querySelector('.number-desc');
- const desc2 = document.querySelector('.number-desc2');
+bulkcreate(db.numbers, {
+    amharic: "አንድ",
+    geez: "አሀዱ",
+    numGeez: "፩"
+})
+
+bulkcreate(db.numbers, {
+    amharic: "ሁለት",
+    geez: "ክልኤቱ",
+    numGeez: "፪"
+})
+
+bulkcreate(db.numbers, {
+    amharic: "ሶስት",
+    geez: "ሠለስቱ",
+    numGeez: "፫"
+})
+
+bulkcreate(db.numbers, {
+    amharic: "አራት",
+    geez: "ኣርባዕቱ",
+    numGeez: "፬"
+})
 
 
 let lists = list_item.children;
@@ -95,6 +121,8 @@ let buttons = letter_buttons.children;
 //We're using delegation on both
 list_item.addEventListener('click',change);
 letter_buttons.addEventListener('click',changeButtons);
+
+num_buttons.addEventListener('click', changeNumbers);
 
 //Event listener for search
 search_button.addEventListener('click',searchLetters);
@@ -129,7 +157,7 @@ function changeButtons(e) {
             })
         }
 
-        else if (e.target.textContent == "ለ") {
+else if (e.target.textContent == "ለ") {
             db.letters.get(2, function(secondRow) {
                 letter_1.innerHTML = secondRow['letter1'];
                 letter_2.innerHTML = secondRow['letter2'];
@@ -175,7 +203,6 @@ function changeButtons(e) {
                 letter_6.innerHTML = fifthRow['letter6'];
                 letter_7.innerHTML = fifthRow['letter7'];
             })   
-
         }
 
         main_letter.innerHTML = e.target.textContent;
@@ -226,7 +253,7 @@ function searchLetters() {
         })
     }
 
-    else if (letter == "ሐ" || letter == "ሑ" || letter == "ሒ" || letter == "ሓ" || letter == "ሔ" || letter == "ሕ" || letter == "ሖ") {
+else if (letter == "ሐ" || letter == "ሑ" || letter == "ሒ" || letter == "ሓ" || letter == "ሔ" || letter == "ሕ" || letter == "ሖ") {
         $('#myCarousel').carousel(0);
         db.letters.get(3, function(rowThree) {
             main_letter.innerHTML = rowThree['letter1'];
@@ -256,4 +283,41 @@ function searchLetters() {
         console.log($('#myCarousel').carousel(1));
     }
 
+}
+
+function changeNumbers(e) {
+    if (e.target.classList.contains("btn")) {
+        if (e.target.textContent == "1") {
+            db.numbers.get(1, function(rowOne) { 
+                numMain.innerHTML = rowOne['numGeez'];
+                numAmharic.innerHTML = rowOne['amharic'];
+                numGeez.innerHTML = rowOne['geez'];
+            })
+        }
+
+        else if (e.target.textContent == "2") {
+            db.numbers.get(2, function(rowTwo) { 
+                numMain.innerHTML = rowTwo["numGeez"];
+                numAmharic.innerHTML = rowTwo["amharic"];
+                numGeez.innerHTML = rowTwo["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "3") {
+            db.numbers.get(3, function(rowThree) { 
+                numMain.innerHTML = rowThree["numGeez"];
+                numAmharic.innerHTML = rowThree["amharic"];
+                numGeez.innerHTML = rowThree["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "4") {
+            db.numbers.get(4, function(rowFour) { 
+                numMain.innerHTML = rowFour["numGeez"];
+                numAmharic.innerHTML = rowFour["amharic"];
+                numGeez.innerHTML = rowFour["geez"];
+            })
+        }
+
+    }
 }
