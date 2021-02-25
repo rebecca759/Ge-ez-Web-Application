@@ -8,7 +8,7 @@ const productdb = (dbname,table1,table2) => {
     /* const db = new Dexie("geez_database");
   
     db.version(1).stores({
-        letters: `letter1 , letter2`
+        letters: letter1 , letter2
     }); */
 
     return db;

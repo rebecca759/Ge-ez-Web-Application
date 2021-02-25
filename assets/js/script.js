@@ -3,7 +3,7 @@ import productdb, {
 } from './module.js'
 
 const db = productdb("GeezDB",{
-    letters: `++id, letter1, letter2, letter3, letter4, letter5, letter6, letter7`, numbers: `++id, amharic, geez, numGeez`
+    letters: ++id, letter1, letter2, letter3, letter4, letter5, letter6, letter7, numbers: ++id, amharic, geez, numGeez
 });
 
 //UI Vars
@@ -90,7 +90,6 @@ bulkcreate(db.letters, {
     letter7: 'ሮ'
 })
 
-<<<<<<< HEAD
 bulkcreate(db.numbers, {
     amharic: "አንድ",
     geez: "አሀዱ",
@@ -114,12 +113,10 @@ bulkcreate(db.numbers, {
     geez: "ኣርባዕቱ",
     numGeez: "፬"
 })
-=======
+
 // get each descrption from HTML
  const desc1 = document.querySelector('.number-desc');
  const desc2 = document.querySelector('.number-desc2');
->>>>>>> 691f037aae31aceb3f3c0f14ec5e349915b4024c
-
 
 let lists = list_item.children;
 let buttons = letter_buttons.children;
@@ -163,7 +160,7 @@ function changeButtons(e) {
             })
         }
 
-        else if (e.target.textContent == "ለ") {
+else if (e.target.textContent == "ለ") {
             db.letters.get(2, function(secondRow) {
                 letter_1.innerHTML = secondRow['letter1'];
                 letter_2.innerHTML = secondRow['letter2'];
@@ -209,7 +206,6 @@ function changeButtons(e) {
                 letter_6.innerHTML = fifthRow['letter6'];
                 letter_7.innerHTML = fifthRow['letter7'];
             })   
-
         }
 
         main_letter.innerHTML = e.target.textContent;
@@ -260,7 +256,7 @@ function searchLetters() {
         })
     }
 
-    else if (letter == "ሐ" || letter == "ሑ" || letter == "ሒ" || letter == "ሓ" || letter == "ሔ" || letter == "ሕ" || letter == "ሖ") {
+else if (letter == "ሐ" || letter == "ሑ" || letter == "ሒ" || letter == "ሓ" || letter == "ሔ" || letter == "ሕ" || letter == "ሖ") {
         $('#myCarousel').carousel(0);
         db.letters.get(3, function(rowThree) {
             main_letter.innerHTML = rowThree['letter1'];
