@@ -544,3 +544,25 @@ h3 {
     width: 500px !important;
     height: 300px !important;
 }
+.circle {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 50%;
+    font-size: 40px;
+    text-align: center;
+    background: rgba(236, 219, 231, 0.829);
+    border: 1px solid rgb(182, 182, 182);
+  }
+  .faq {
+    background-color: rgba(236, 219, 231, 0.829);
+    font-family: 'Work Sans', sans-serif;
+}
+
+.card-faq:hover {
+    background-color: rgb(247, 245, 246)
+}
+
+.faq-icon {
+    padding-left: 180px;
+}
