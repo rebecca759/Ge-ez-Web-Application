@@ -3,7 +3,7 @@ import productdb, {
 } from './module.js'
 
 const db = productdb("GeezDB",{
-    letters: ++id, letter1, letter2, letter3, letter4, letter5, letter6, letter7, numbers: ++id, amharic, geez, numGeez
+    letters: `++id, letter1, letter2, letter3, letter4, letter5, letter6, letter7`, numbers: `++id, amharic, geez, numGeez`
 });
 
 //UI Vars
@@ -12,6 +12,8 @@ const letter_buttons = document.querySelector('.letter-list');
 const main_letter = document.querySelector('.main-letter');
 const letter_input = document.querySelector('#search-letters');
 const search_button = document.querySelector('#searchlet-btn');
+const searchnums_button = document.querySelector('#searchnums-btn');
+const number_input = document.querySelector('#search-nums');
 
 //Get Each letter from HTML
 const letter_1 = document.querySelector('.letter-1');
@@ -27,6 +29,9 @@ const numAmharic = document.querySelector('.numAmharic');
 const numGeez = document.querySelector('.numGeez');
 const num_buttons = document.querySelector('.num-list');
 const numMain = document.querySelector('.main_num');
+const numberTab = document.querySelector('.numberTab');
+const wordTab = document.querySelector('.wordTab');
+
 
 //Populate the database
 bulkcreate(db.letters, {
@@ -114,6 +119,47 @@ bulkcreate(db.numbers, {
     numGeez: "፬"
 })
 
+bulkcreate(db.numbers, {
+    amharic: "አምስት",
+    geez: "ሓምስቱ",
+    numGeez: "፭"
+})
+
+bulkcreate(db.numbers, {
+    amharic: "ስድስት",
+    geez: "ስድስቱ",
+    numGeez: "፮"
+})
+
+bulkcreate(db.numbers, {
+    amharic: "ሰባት",
+    geez: "ሰብዓቱ",
+    numGeez: "፯"
+})
+
+
+bulkcreate(db.numbers, {
+    amharic: "ስምንት",
+    geez: "ሰመንቱ",
+    numGeez: "፰"
+})
+
+bulkcreate(db.numbers, {
+    amharic: "ዘጠኝ",
+    geez: "ተስዓቱ",
+    numGeez: "፱"
+})
+
+bulkcreate(db.numbers, {
+    amharic: "አስር",
+    geez: "ዓሠርቱ",
+    numGeez: "፲"
+})
+
+
+// get each descrption from HTML
+const desc1 = document.querySelector('.number-desc');
+const desc2 = document.querySelector('.number-desc2');
 
 let lists = list_item.children;
 let buttons = letter_buttons.children;
@@ -126,6 +172,7 @@ num_buttons.addEventListener('click', changeNumbers);
 
 //Event listener for search
 search_button.addEventListener('click',searchLetters);
+searchnums_button.addEventListener('click',searchNumbers);
 
 function change(e) {
     for (let i = 0; i < lists.length; i++) {
@@ -157,7 +204,7 @@ function changeButtons(e) {
             })
         }
 
-else if (e.target.textContent == "ለ") {
+        else if (e.target.textContent == "ለ") {
             db.letters.get(2, function(secondRow) {
                 letter_1.innerHTML = secondRow['letter1'];
                 letter_2.innerHTML = secondRow['letter2'];
@@ -203,6 +250,20 @@ else if (e.target.textContent == "ለ") {
                 letter_6.innerHTML = fifthRow['letter6'];
                 letter_7.innerHTML = fifthRow['letter7'];
             })   
+
+        }
+
+        else if (e.target.textContent == "ረ") {
+            db.letters.get(6, function(sixthRow) {
+                letter_1.innerHTML = sixthRow['letter1'];
+                letter_2.innerHTML = sixthRow['letter2'];
+                letter_3.innerHTML = sixthRow['letter3'];
+                letter_4.innerHTML = sixthRow['letter4'];
+                letter_5.innerHTML = sixthRow['letter5'];
+                letter_6.innerHTML = sixthRow['letter6'];
+                letter_7.innerHTML = sixthRow['letter7'];
+            })   
+
         }
 
         main_letter.innerHTML = e.target.textContent;
@@ -225,7 +286,48 @@ function searchLetters() {
 
     var letter = letter_input.value.charAt(0);
 
+    let letter_class = "ሀ";
+
     if (letter == "ሀ" || letter == "ሁ" || letter == "ሂ" || letter == "ሃ" || letter == "ሄ" || letter == "ህ" || letter == "ሆ") {
+        letter_class = "ሀ";
+    }
+
+    else if (letter == "ለ" || letter == "ሉ" || letter == "ሊ" || letter == "ላ" || letter == "ሌ" || letter == "ል" || letter == "ሎ") {
+        letter_class = "ለ";
+    }
+
+    else if (letter == "ሐ" || letter == "ሑ" || letter == "ሒ" || letter == "ሓ" || letter == "ሔ" || letter == "ሕ" || letter == "ሖ") {
+        letter_class = "ሐ";
+    }
+
+    else if (letter == "ረ" || letter == "ሩ" || letter == "ሪ" || letter == "ራ" || letter == "ሬ" || letter == "ር" || letter == "ሮ") {
+        letter_class = "ረ";
+    }
+
+    loop1:
+        for (let i = 0; i < letter_buttons.children.length; i++) {
+            let buttons_list = letter_buttons.children
+    loop2:
+            for (let j = 0; j < buttons_list.length; j++) {
+                let buttons = buttons_list[j].children;
+
+    loop3:
+                for (let k = 0; k < buttons.length; k++) {
+                    if (buttons[k].textContent == letter_class) {
+                        buttons[k].style.background = '#6d4512';
+                        buttons[k].style.color = 'white';
+                    }
+
+                    else {
+                        buttons[k].style.background = 'white';
+                        buttons[k].style.color = '#6d4512';
+                    }
+                } 
+            } 
+            break loop1;   
+        }
+
+    if (letter_class == "ሀ") {
         $('#myCarousel').carousel(0);
         db.letters.get(1, function(rowOne) {
             main_letter.innerHTML = rowOne['letter1'];
@@ -239,7 +341,7 @@ function searchLetters() {
         })  
     }
 
-    else if (letter == "ለ" || letter == "ሉ" || letter == "ሊ" || letter == "ላ" || letter == "ሌ" || letter == "ል" || letter == "ሎ") {
+    else if (letter_class == "ለ") {
         $('#myCarousel').carousel(0);
         db.letters.get(2, function(rowTwo) {
             main_letter.innerHTML = rowTwo['letter1'];
@@ -253,7 +355,7 @@ function searchLetters() {
         })
     }
 
-else if (letter == "ሐ" || letter == "ሑ" || letter == "ሒ" || letter == "ሓ" || letter == "ሔ" || letter == "ሕ" || letter == "ሖ") {
+    else if (letter_class == "ሐ") {
         $('#myCarousel').carousel(0);
         db.letters.get(3, function(rowThree) {
             main_letter.innerHTML = rowThree['letter1'];
@@ -267,7 +369,7 @@ else if (letter == "ሐ" || letter == "ሑ" || letter == "ሒ" || letter == "ሓ
         })
     }
 
-    else if (letter == "ረ" || letter == "ሩ" || letter == "ሪ" || letter == "ራ" || letter == "ሬ" || letter == "ር" || letter == "ሮ") {
+    else if (letter_class == "ረ") {
         $('#myCarousel').carousel(1);
         db.letters.get(6, function(rowSix) {
             main_letter.innerHTML = rowSix['letter1'];
@@ -287,6 +389,13 @@ else if (letter == "ሐ" || letter == "ሑ" || letter == "ሒ" || letter == "ሓ
 
 function changeNumbers(e) {
     if (e.target.classList.contains("btn")) {
+        let old_buttons = e.target.parentElement.children;
+
+        for (let i = 0; i < old_buttons.length; i++) {
+            old_buttons[i].style.background = 'white';
+            old_buttons[i].style.color = '#6d4512';
+        }
+
         if (e.target.textContent == "1") {
             db.numbers.get(1, function(rowOne) { 
                 numMain.innerHTML = rowOne['numGeez'];
@@ -319,5 +428,179 @@ function changeNumbers(e) {
             })
         }
 
+        else if (e.target.textContent == "5") {
+            db.numbers.get(5, function(rowFive) { 
+                numMain.innerHTML = rowFive["numGeez"];
+                numAmharic.innerHTML = rowFive["amharic"];
+                numGeez.innerHTML = rowFive["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "6") {
+            db.numbers.get(6, function(rowSix) { 
+                numMain.innerHTML = rowSix["numGeez"];
+                numAmharic.innerHTML = rowSix["amharic"];
+                numGeez.innerHTML = rowSix["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "7") {
+            db.numbers.get(7, function(rowSeven) { 
+                numMain.innerHTML = rowSeven["numGeez"];
+                numAmharic.innerHTML = rowSeven["amharic"];
+                numGeez.innerHTML = rowSeven["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "8") {
+            db.numbers.get(8, function(rowEight) { 
+                numMain.innerHTML = rowEight["numGeez"];
+                numAmharic.innerHTML = rowEight["amharic"];
+                numGeez.innerHTML = rowEight["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "9") {
+            db.numbers.get(9, function(rowNine) { 
+                numMain.innerHTML = rowNine["numGeez"];
+                numAmharic.innerHTML = rowNine["amharic"];
+                numGeez.innerHTML = rowNine["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "10") {
+            db.numbers.get(10, function(rowTen) { 
+                numMain.innerHTML = rowTen["numGeez"];
+                numAmharic.innerHTML = rowTen["amharic"];
+                numGeez.innerHTML = rowTen["geez"];
+            })
+        }
+
+        e.target.style.background = '#6d4512';
+        e.target.style.color = 'white';
+
     }
 }
+
+function searchNumbers() {
+    //check if search input is empty
+    if (number_input.value == '') {
+        number_input.style.borderColor = "red";
+        return;
+    }
+
+    number_input.style.borderColor = '#ebebeb';
+
+    //get search letter input
+
+    var number = number_input.value.charAt(0);
+
+
+    loop1:
+        for (let i = 0; i < num_buttons.children.length; i++) {
+            let buttons_list = num_buttons.children
+    loop2:
+            for (let j = 0; j < buttons_list.length; j++) {
+                let buttons = buttons_list[j].children;
+
+    loop3:
+                for (let k = 0; k < buttons.length; k++) {
+                    if (buttons[k].textContent == number) {
+                        buttons[k].style.background = '#6d4512';
+                        buttons[k].style.color = 'white';
+                    }
+
+                    else {
+                        buttons[k].style.background = 'white';
+                        buttons[k].style.color = '#6d4512';
+                    }
+                }
+            } 
+            break loop1;     
+        }
+   
+    if (number == "1") {
+        $('#numCarousel').carousel(0);
+        db.numbers.get(1, function(rowOne) {
+            numMain.innerHTML = rowOne['numGeez'];
+            numAmharic.innerHTML = rowOne['amharic'];
+            numGeez.innerHTML = rowOne['geez'];
+        })  
+    }
+
+    else if (number == "2") {
+        $('#numCarousel').carousel(0);
+        db.numbers.get(2, function(rowTwo) {
+            numMain.innerHTML = rowTwo['numGeez'];
+            numAmharic.innerHTML = rowTwo['amharic'];
+            numGeez.innerHTML = rowTwo['geez'];
+        })  
+    }
+
+    else if (number == "3") {
+        $('#numCarousel').carousel(0);
+        db.numbers.get(3, function(rowThree) {
+            numMain.innerHTML = rowThree['numGeez'];
+            numAmharic.innerHTML = rowThree['amharic'];
+            numGeez.innerHTML = rowThree['geez'];
+        })  
+    }
+
+    else if (number == "4") {
+        $('#numCarousel').carousel(0);
+        db.numbers.get(4, function(rowFour) {
+            numMain.innerHTML = rowFour['numGeez'];
+            numAmharic.innerHTML = rowFour['amharic'];
+            numGeez.innerHTML = rowFour['geez'];
+        })  
+    }
+
+    else if (number == "5") {
+        $('#numCarousel').carousel(1);
+        db.numbers.get(5, function(rowFive) {
+            numMain.innerHTML = rowFive['numGeez'];
+            numAmharic.innerHTML = rowFive['amharic'];
+            numGeez.innerHTML = rowFive['geez'];
+        })  
+    }
+
+    else if (number == "6") {
+        $('#numCarousel').carousel(1);
+        db.numbers.get(6, function(rowSix) {
+            numMain.innerHTML = rowSix['numGeez'];
+            numAmharic.innerHTML = rowSix['amharic'];
+            numGeez.innerHTML = rowSix['geez'];
+        })  
+    }
+
+    else if (number == "7") {
+        $('#numCarousel').carousel(1);
+        db.numbers.get(7, function(rowSeven) {
+            numMain.innerHTML = rowSeven['numGeez'];
+            numAmharic.innerHTML = rowSeven['amharic'];
+            numGeez.innerHTML = rowSeven['geez'];
+        })  
+    }
+
+    else if (number == "8") {
+        $('#numCarousel').carousel(1);
+        db.numbers.get(8, function(rowEight) {
+            numMain.innerHTML = rowEight['numGeez'];
+            numAmharic.innerHTML = rowEight['amharic'];
+            numGeez.innerHTML = rowEight['geez'];
+        })  
+    }
+
+    else {
+        number_input.style.borderColor = "red";
+    }
+      
+}
+
+window.onscroll = function(ev) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // you're at the bottom of the page
+            numberTab.classList.remove('disabled');
+           
+    }
+};
