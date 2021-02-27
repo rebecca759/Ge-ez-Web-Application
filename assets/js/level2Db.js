@@ -52,7 +52,7 @@ bulkcreate(db.verb, {
 
 /// add even listner to the search 
 GverbButton.addEventListener('click', searchGeezVerb);
-//AverbButton.addEventListener('click', searchAmharicVerb);
+AverbButton.addEventListener('click', searchAmharicVerb);
 
 
 /// function for search using Geez word 
@@ -83,6 +83,49 @@ function searchGeezVerb(){
             
         })
     } else if(word == "ሖረ") {
+        db.verb.get(2, function(rowTwo) {
+            verbGeez.innerHTML = `${rowTwo['verbG']} (ግስ) : ${rowTwo['verbAm']} (የአማርኛ ፍቺ)`;
+            verbQuest.innerHTML = rowTwo['verbQ'];
+            verbAction.innerHTML = rowTwo['verbA'];
+            verbBoy.innerHTML = rowTwo['verbB'];
+            verbMen.innerHTML = rowTwo['verbM'];
+            verbGirl.innerHTML = rowTwo['verbGi'];
+            verbWomen.innerHTML = rowTwo['verbW'];
+            
+        })
+    }
+
+    
+}
+
+// function for search using Geez word 
+
+function searchAmharicVerb(){
+
+    //check if search input is empty
+    if (AverbInput.value == '') {
+        AverbInput.style.borderColor = "red";
+        return;//Avoiding else statement
+    }
+   
+    AverbInput.style.borderColor = '#ebebeb';
+
+    //get search letter input
+
+    var word = AverbInput.value;
+
+    if(word == "ተቀመጠ") {
+        db.verb.get(1, function(rowOne) {
+            verbGeez.innerHTML = `${rowOne['verbG']} (ግስ) : ${rowOne['verbAm']} (የአማርኛ ፍቺ)`;
+            verbQuest.innerHTML = rowOne['verbQ'];
+            verbAction.innerHTML = rowOne['verbA'];
+            verbBoy.innerHTML = rowOne['verbB'];
+            verbMen.innerHTML = rowOne['verbM'];
+            verbGirl.innerHTML = rowOne['verbGi'];
+            verbWomen.innerHTML = rowOne['verbW'];
+            
+        })
+    } else if(word == "ሄደ") {
         db.verb.get(2, function(rowTwo) {
             verbGeez.innerHTML = `${rowTwo['verbG']} (ግስ) : ${rowTwo['verbAm']} (የአማርኛ ፍቺ)`;
             verbQuest.innerHTML = rowTwo['verbQ'];
