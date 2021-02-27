@@ -469,20 +469,20 @@ bulkcreate(db.numbers, {
 })
 
 bulkcreate(db.numbers, {
-    amharic: "አስር",
-    geez: "ዓሠርቱ",
+    amharic: "ሰማንያ",
+    geez: "ሰማንያ",
     numGeez: "፹"
 })
 
 bulkcreate(db.numbers, {
-    amharic: "አስር",
-    geez: "ዓሠርቱ",
+    amharic: "ዘጠና",
+    geez: "ተስዓ",
     numGeez: "፺"
 })
 
 bulkcreate(db.numbers, {
-    amharic: "አስር",
-    geez: "ዓሠርቱ",
+    amharic: "አንድ መቶ",
+    geez: "አሐዱ ምዕት",
     numGeez: "፻"
 })
 
@@ -1192,6 +1192,78 @@ function changeNumbers(e) {
             })
         }
 
+        else if (e.target.textContent == "20") {
+            db.numbers.get(11, function(rowEleven) { 
+                numMain.innerHTML = rowEleven["numGeez"];
+                numAmharic.innerHTML = rowEleven["amharic"];
+                numGeez.innerHTML = rowEleven["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "30") {
+            db.numbers.get(12, function(rowTwelve) { 
+                numMain.innerHTML = rowTwelve["numGeez"];
+                numAmharic.innerHTML = rowTwelve["amharic"];
+                numGeez.innerHTML = rowTwelve["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "40") {
+            db.numbers.get(13, function(rowThirteen) { 
+                numMain.innerHTML = rowThirteen["numGeez"];
+                numAmharic.innerHTML = rowThirteen["amharic"];
+                numGeez.innerHTML = rowThirteen["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "50") {
+            db.numbers.get(14, function(rowFourteen) { 
+                numMain.innerHTML = rowFourteen["numGeez"];
+                numAmharic.innerHTML = rowFourteen["amharic"];
+                numGeez.innerHTML = rowFourteen["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "60") {
+            db.numbers.get(15, function(rowFiftn) { 
+                numMain.innerHTML = rowFiftn["numGeez"];
+                numAmharic.innerHTML = rowFiftn["amharic"];
+                numGeez.innerHTML = rowFiftn["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "70") {
+            db.numbers.get(16, function(rowSixtn) { 
+                numMain.innerHTML = rowSixtn["numGeez"];
+                numAmharic.innerHTML = rowSixtn["amharic"];
+                numGeez.innerHTML = rowSixtn["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "80") {
+            db.numbers.get(17, function(rowSeventn) { 
+                numMain.innerHTML = rowSeventn["numGeez"];
+                numAmharic.innerHTML = rowSeventn["amharic"];
+                numGeez.innerHTML = rowSeventn["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "90") {
+            db.numbers.get(18, function(rowEightn) { 
+                numMain.innerHTML = rowEightn["numGeez"];
+                numAmharic.innerHTML = rowEightn["amharic"];
+                numGeez.innerHTML = rowEightn["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "100") {
+            db.numbers.get(19, function(rowNintn) { 
+                numMain.innerHTML = rowNintn["numGeez"];
+                numAmharic.innerHTML = rowNintn["amharic"];
+                numGeez.innerHTML = rowNintn["geez"];
+            })
+        }
+
         e.target.style.background = '#6d4512';
         e.target.style.color = 'white';
 
@@ -1209,7 +1281,7 @@ function searchNumbers() {
 
     //get search letter input
 
-    var number = number_input.value.charAt(0);
+    var number = number_input.value;
 
 
     loop1:
@@ -1304,6 +1376,96 @@ function searchNumbers() {
             numMain.innerHTML = rowEight['numGeez'];
             numAmharic.innerHTML = rowEight['amharic'];
             numGeez.innerHTML = rowEight['geez'];
+        })  
+    }
+
+    else if (number == "9") {
+        $('#numCarousel').carousel(2);
+        db.numbers.get(9, function(rowNine) {
+            numMain.innerHTML = rowNine['numGeez'];
+            numAmharic.innerHTML = rowNine['amharic'];
+            numGeez.innerHTML = rowNine['geez'];
+        })  
+    }
+
+    else if (number == "10") {
+        $('#numCarousel').carousel(2);
+        db.numbers.get(10, function(rowTen) {
+            numMain.innerHTML = rowTen['numGeez'];
+            numAmharic.innerHTML = rowTen['amharic'];
+            numGeez.innerHTML = rowTen['geez'];
+        })  
+    }
+
+    else if (number == "20") {
+        $('#numCarousel').carousel(2);
+        db.numbers.get(11, function(rowEleven) {
+            numMain.innerHTML = rowEleven['numGeez'];
+            numAmharic.innerHTML = rowEleven['amharic'];
+            numGeez.innerHTML = rowEleven['geez'];
+        })  
+    }
+
+    else if (number == "30") {
+        $('#numCarousel').carousel(2);
+        db.numbers.get(12, function(rowTwelve) {
+            numMain.innerHTML = rowTwelve['numGeez'];
+            numAmharic.innerHTML = rowTwelve['amharic'];
+            numGeez.innerHTML = rowTwelve['geez'];
+        })  
+    }
+
+    else if (number == "40") {
+        $('#numCarousel').carousel(3);
+        db.numbers.get(13, function(rowThirteen) {
+            numMain.innerHTML = rowThirteen['numGeez'];
+            numAmharic.innerHTML = rowThirteen['amharic'];
+            numGeez.innerHTML = rowThirteen['geez'];
+        })  
+    }
+
+    else if (number == "50") {
+        $('#numCarousel').carousel(3);
+        db.numbers.get(14, function(rowFourtn) {
+            numMain.innerHTML = rowFourtn['numGeez'];
+            numAmharic.innerHTML = rowFourtn['amharic'];
+            numGeez.innerHTML = rowFourtn['geez'];
+        })  
+    }
+
+    else if (number == "60") {
+        $('#numCarousel').carousel(3);
+        db.numbers.get(15, function(rowFiftn) {
+            numMain.innerHTML = rowFiftn['numGeez'];
+            numAmharic.innerHTML = rowFiftn['amharic'];
+            numGeez.innerHTML = rowFiftn['geez'];
+        })  
+    }
+
+    else if (number == "70") {
+        $('#numCarousel').carousel(3);
+        db.numbers.get(16, function(rowSixtn) {
+            numMain.innerHTML = rowSixtn['numGeez'];
+            numAmharic.innerHTML = rowSixtn['amharic'];
+            numGeez.innerHTML = rowSixtn['geez'];
+        })  
+    }
+
+    else if (number == "80") {
+        $('#numCarousel').carousel(4);
+        db.numbers.get(17, function(rowSeventn) {
+            numMain.innerHTML = rowSeventn['numGeez'];
+            numAmharic.innerHTML = rowSeventn['amharic'];
+            numGeez.innerHTML = rowSeventn['geez'];
+        })  
+    }
+
+    else if (number == "90") {
+        $('#numCarousel').carousel(4);
+        db.numbers.get(18, function(rowEightn) {
+            numMain.innerHTML = rowEightn['numGeez'];
+            numAmharic.innerHTML = rowEightn['amharic'];
+            numGeez.innerHTML = rowEightn['geez'];
         })  
     }
 
