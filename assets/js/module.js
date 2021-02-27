@@ -1,4 +1,4 @@
-const productdb = (dbname,table1,table2) => {
+const productdb = (dbname,table1,table2,table3) => {
     //create database
     
     const db = new Dexie(dbname)
