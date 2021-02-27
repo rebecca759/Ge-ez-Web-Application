@@ -151,6 +151,21 @@ body {
     border-radius: 50%;
 }
 
+#indexnavLink{
+    text-decoration: none;
+    
+}
+#indexnavLink:active{
+    color: rgb(56, 94, 25);
+    text-decoration: none;
+}
+
+
+#indexnavLink:hover{
+    color: rgb(143, 100, 6);
+    text-decoration: none;
+}
+
 .learn-icons {
     font-size: 50px;
     line-height: 50px;
@@ -569,13 +584,17 @@ h3 {
 .start_btn button{
     font-size: 25px;
     font-weight: 500;
-    color: #007bff;
+    color: chocolate;
     padding: 15px 30px;
     outline: none;
     border: none;
     border-radius: 5px;
     background: #fff;
     cursor: pointer;
+}
+
+.start_btn button:hover {
+    background-color: rgba(211, 211, 211, 0.562);
 }
 
 .info_box{
@@ -910,3 +929,5 @@ footer button.show{
     color: #fff;
     background: #007bff;
 }
+
+

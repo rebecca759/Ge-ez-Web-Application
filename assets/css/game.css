@@ -1,9 +1,22 @@
+body {
+  background-color: rgb(223, 217, 217);
+}
 .grid {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
-    height: 300px;
-    margin-left: 28%;
-    margin-top: 10%;
+    width: 500px;
+    height: 400px;
+    margin: 8% auto;
   }
  
+  .score {
+    font-size: 45px;
+    color: rgb(77, 76, 76);
+    font-weight: bold;
+}
+
+.navGame {
+  background-color: rgb(63, 61, 61);
+  color: white;
+  font-size: 48px;
+}
