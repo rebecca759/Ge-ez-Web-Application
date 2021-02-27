@@ -31,6 +31,9 @@ const numAmharic = document.querySelector('.numAmharic');
 const numGeez = document.querySelector('.numGeez');
 const num_buttons = document.querySelector('.num-list');
 const numMain = document.querySelector('.main_num');
+const numberTab = document.querySelector('.numberTab');
+const wordTab = document.querySelector('.wordTab');
+
 
 //UI Vars for months
 const monthOne = document.querySelector('.month-1');
@@ -736,6 +739,7 @@ function changeButtons(e) {
                 letter_6.innerHTML = sixthRow['letter6'];
                 letter_7.innerHTML = sixthRow['letter7'];
             })   
+
         }
 
         else if (e.target.textContent == "ሰ") {
@@ -1060,6 +1064,7 @@ function changeButtons(e) {
                 letter_6.innerHTML = TThreeRow['letter6'];
                 letter_7.innerHTML = TThreeRow['letter7'];
             })   
+
         }
 
         main_letter.innerHTML = e.target.textContent;
@@ -1100,6 +1105,8 @@ function searchLetters() {
         letter_class = "ረ";
     }
 
+
+  
     else if (letter == "ሠ" || letter == "ሡ" || letter == "ሢ" || letter == "ሣ" || letter == "ሤ" || letter == "ሥ" || letter == "ሦ") {
         letter_class = "ሠ";
     }
@@ -1115,6 +1122,7 @@ function searchLetters() {
     else if (letter == "ቀ" || letter == "ቁ" || letter == "ቂ" || letter == "ቃ" || letter == "ቂ" || letter == "ቃ" || letter == "ቆ") {
         letter_class = "ቀ";
     }
+
 
     loop1:
         for (let i = 0; i < letter_buttons.children.length; i++) {
@@ -1181,6 +1189,8 @@ function searchLetters() {
         })
     }
 
+
+  
     else if (letter_class == "መ") {
         $('#myCarousel').carousel(1);
         db.letters.get(4, function(rowFour) {
@@ -1212,6 +1222,7 @@ function searchLetters() {
 
         console.log($('#myCarousel').carousel(1));
     }
+
 
     else if (letter_class == "ረ") {
         $('#myCarousel').carousel(1);
@@ -1615,6 +1626,20 @@ function searchNumbers() {
 
     else {
         number_input.style.borderColor = "red";
+
     }
       
 }
+
+window.onscroll = function(ev) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        // you're at the bottom of the page
+            numberTab.classList.remove('disabled');
+           
+    }
+};
+
+    }
+      
+}
+
