@@ -3,7 +3,9 @@ import productdb, {
 } from './module.js'
 
 const db = productdb("GeezDB",{
-    letters: `++id, letter1, letter2, letter3, letter4, letter5, letter6, letter7`, numbers: `++id, amharic, geez, numGeez`
+    letters: `++id, letter1, letter2, letter3, letter4, letter5, letter6, letter7`, 
+    numbers: `++id, amharic, geez, numGeez`, 
+    months: `++id, amharic, geez`
 });
 
 //UI Vars
@@ -30,6 +32,80 @@ const numGeez = document.querySelector('.numGeez');
 const num_buttons = document.querySelector('.num-list');
 const numMain = document.querySelector('.main_num');
 
+//UI Vars for months
+const monthOne = document.querySelector('.month-1');
+const monthTwo = document.querySelector('.month-2');
+const monthThree = document.querySelector('.month-3');
+const monthFour = document.querySelector('.month-4');
+const monthFive = document.querySelector('.month-5');
+const monthSix = document.querySelector('.month-6');
+const monthSeven = document.querySelector('.month-7');
+const monthEight = document.querySelector('.month-8');
+const monthNine = document.querySelector('.month-9');
+const monthTen = document.querySelector('.month-10');
+const monthEleven = document.querySelector('.month-11');
+const monthTwelve = document.querySelector('.month-12');
+const monthThirteen = document.querySelector('.month-13');
+
+db.months.get(1,function(firstRow) {
+    monthOne.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(2,function(firstRow) {
+    monthTwo.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+
+db.months.get(3,function(firstRow) {
+    monthThree.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+
+db.months.get(4,function(firstRow) {
+    monthFour.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+
+db.months.get(5,function(firstRow) {
+    monthFive.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+
+db.months.get(6,function(firstRow) {
+    monthSix.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(7,function(firstRow) {
+    monthSeven.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(8,function(firstRow) {
+    monthEight.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(9,function(firstRow) {
+    monthNine.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(10,function(firstRow) {
+    monthTen.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(11,function(firstRow) {
+    monthEleven.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(12,function(firstRow) {
+    monthTwelve.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(13,function(firstRow) {
+    monthThirteen.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+
+
+
 window.onscroll = function(ev) {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         // you're at the bottom of the page
@@ -39,6 +115,8 @@ window.onscroll = function(ev) {
 
 
 //Populate the database
+
+//Populate letters table
 bulkcreate(db.letters, {
     letter1: 'ሀ',
     letter2: 'ሁ',
@@ -370,7 +448,7 @@ bulkcreate(db.letters, {
     letter7: 'ፖ'
 })
 
-
+//Popluate numbers table
 bulkcreate(db.numbers, {
     amharic: "አንድ",
     geez: "አሀዱ",
@@ -484,6 +562,72 @@ bulkcreate(db.numbers, {
     amharic: "አንድ መቶ",
     geez: "አሐዱ ምዕት",
     numGeez: "፻"
+})
+
+//Populate months table
+bulkcreate(db.months, {
+    amharic: "መስከረም",
+    geez: "ከረመ"
+})
+
+bulkcreate(db.months, {
+    amharic: "ጥቅምት",
+    geez: "ጠቀመ"
+})
+
+bulkcreate(db.months, {
+    amharic: "ኅዳር",
+    geez: "ኀደረ"
+})
+
+bulkcreate(db.months, {
+    amharic: "ታኅሣሥ",
+    geez: "ኀሠሠ"
+})
+
+bulkcreate(db.months, {
+    amharic: "ጥር",
+    geez: "ጠሐር"
+})
+
+bulkcreate(db.months, {
+    amharic: "የካቲት",
+    geez: "ከተተ"
+})
+
+bulkcreate(db.months, {
+    amharic: "መጋቢት",
+    geez: "መገበ"
+})
+
+bulkcreate(db.months, {
+    amharic: "ሚያዝያ",
+    geez: "አኀዘ"
+})
+
+bulkcreate(db.months, {
+    amharic: "ግንቦት",
+    geez: "ግንባት"
+})
+
+bulkcreate(db.months, {
+    amharic: "ሰኔ",
+    geez: "ሠነየ"
+})
+
+bulkcreate(db.months, {
+    amharic: "ሐምሌ",
+    geez: "ሐመለ"
+})
+
+bulkcreate(db.months, {
+    amharic: "ነሐሴ",
+    geez: "ነሐሰ"
+})
+
+bulkcreate(db.months, {
+    amharic: "ጳጉሜን",
+    geez: "ጳጕሜን"
 })
 
 // get each descrption from HTML
