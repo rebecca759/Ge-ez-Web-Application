@@ -50,72 +50,6 @@ const monthEleven = document.querySelector('.month-11');
 const monthTwelve = document.querySelector('.month-12');
 const monthThirteen = document.querySelector('.month-13');
 
-db.months.get(1,function(firstRow) {
-    monthOne.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
-})
-
-db.months.get(2,function(firstRow) {
-    monthTwo.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
-})
-
-
-db.months.get(3,function(firstRow) {
-    monthThree.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
-})
-
-
-db.months.get(4,function(firstRow) {
-    monthFour.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
-})
-
-
-db.months.get(5,function(firstRow) {
-    monthFive.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
-})
-
-
-db.months.get(6,function(firstRow) {
-    monthSix.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
-})
-
-db.months.get(7,function(firstRow) {
-    monthSeven.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
-})
-
-db.months.get(8,function(firstRow) {
-    monthEight.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
-})
-
-db.months.get(9,function(firstRow) {
-    monthNine.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
-})
-
-db.months.get(10,function(firstRow) {
-    monthTen.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
-})
-
-db.months.get(11,function(firstRow) {
-    monthEleven.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
-})
-
-db.months.get(12,function(firstRow) {
-    monthTwelve.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
-})
-
-db.months.get(13,function(firstRow) {
-    monthThirteen.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
-})
-
-
-
-
-window.onscroll = function(ev) {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        // you're at the bottom of the page
-        console.log("yes");
-    }
-};
-
 
 //Populate the database
 
@@ -1631,12 +1565,58 @@ function searchNumbers() {
       
 }
 
-window.onscroll = function(ev) {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        // you're at the bottom of the page
-            numberTab.classList.remove('disabled');
-           
-    }
-};
+db.months.get(1,function(firstRow) {
+    monthOne.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
 
-      
+db.months.get(2,function(firstRow) {
+    monthTwo.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+
+db.months.get(3,function(firstRow) {
+    monthThree.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+
+db.months.get(4,function(firstRow) {
+    monthFour.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+
+db.months.get(5,function(firstRow) {
+    monthFive.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+
+db.months.get(6,function(firstRow) {
+    monthSix.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(7,function(firstRow) {
+    monthSeven.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(8,function(firstRow) {
+    monthEight.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(9,function(firstRow) {
+    monthNine.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(10,function(firstRow) {
+    monthTen.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(11,function(firstRow) {
+    monthEleven.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(12,function(firstRow) {
+    monthTwelve.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(13,function(firstRow) {
+    monthThirteen.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
