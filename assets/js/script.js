@@ -1639,7 +1639,4 @@ window.onscroll = function(ev) {
     }
 };
 
-    }
       
-}
-
