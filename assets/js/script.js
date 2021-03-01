@@ -3,7 +3,9 @@ import productdb, {
 } from './module.js'
 
 const db = productdb("GeezDB",{
-    letters: `++id, letter1, letter2, letter3, letter4, letter5, letter6, letter7`, numbers: `++id, amharic, geez, numGeez`
+    letters: `++id, letter1, letter2, letter3, letter4, letter5, letter6, letter7`, 
+    numbers: `++id, amharic, geez, numGeez`, 
+    months: `++id, amharic, geez`
 });
 
 //UI Vars
@@ -33,15 +35,25 @@ const numberTab = document.querySelector('.numberTab');
 const wordTab = document.querySelector('.wordTab');
 
 
-window.onscroll = function(ev) {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        // you're at the bottom of the page
-        console.log("yes");
-    }
-};
+//UI Vars for months
+const monthOne = document.querySelector('.month-1');
+const monthTwo = document.querySelector('.month-2');
+const monthThree = document.querySelector('.month-3');
+const monthFour = document.querySelector('.month-4');
+const monthFive = document.querySelector('.month-5');
+const monthSix = document.querySelector('.month-6');
+const monthSeven = document.querySelector('.month-7');
+const monthEight = document.querySelector('.month-8');
+const monthNine = document.querySelector('.month-9');
+const monthTen = document.querySelector('.month-10');
+const monthEleven = document.querySelector('.month-11');
+const monthTwelve = document.querySelector('.month-12');
+const monthThirteen = document.querySelector('.month-13');
 
 
 //Populate the database
+
+//Populate letters table
 bulkcreate(db.letters, {
     letter1: 'ሀ',
     letter2: 'ሁ',
@@ -373,7 +385,7 @@ bulkcreate(db.letters, {
     letter7: 'ፖ'
 })
 
-
+//Popluate numbers table
 bulkcreate(db.numbers, {
     amharic: "አንድ",
     geez: "አሀዱ",
@@ -472,23 +484,88 @@ bulkcreate(db.numbers, {
 })
 
 bulkcreate(db.numbers, {
-    amharic: "አስር",
-    geez: "ዓሠርቱ",
+    amharic: "ሰማንያ",
+    geez: "ሰማንያ",
     numGeez: "፹"
 })
 
 bulkcreate(db.numbers, {
-    amharic: "አስር",
-    geez: "ዓሠርቱ",
+    amharic: "ዘጠና",
+    geez: "ተስዓ",
     numGeez: "፺"
 })
 
 bulkcreate(db.numbers, {
-    amharic: "አስር",
-    geez: "ዓሠርቱ",
+    amharic: "አንድ መቶ",
+    geez: "አሐዱ ምዕት",
     numGeez: "፻"
 })
 
+//Populate months table
+bulkcreate(db.months, {
+    amharic: "መስከረም",
+    geez: "ከረመ"
+})
+
+bulkcreate(db.months, {
+    amharic: "ጥቅምት",
+    geez: "ጠቀመ"
+})
+
+bulkcreate(db.months, {
+    amharic: "ኅዳር",
+    geez: "ኀደረ"
+})
+
+bulkcreate(db.months, {
+    amharic: "ታኅሣሥ",
+    geez: "ኀሠሠ"
+})
+
+bulkcreate(db.months, {
+    amharic: "ጥር",
+    geez: "ጠሐር"
+})
+
+bulkcreate(db.months, {
+    amharic: "የካቲት",
+    geez: "ከተተ"
+})
+
+bulkcreate(db.months, {
+    amharic: "መጋቢት",
+    geez: "መገበ"
+})
+
+bulkcreate(db.months, {
+    amharic: "ሚያዝያ",
+    geez: "አኀዘ"
+})
+
+bulkcreate(db.months, {
+    amharic: "ግንቦት",
+    geez: "ግንባት"
+})
+
+bulkcreate(db.months, {
+    amharic: "ሰኔ",
+    geez: "ሠነየ"
+})
+
+bulkcreate(db.months, {
+    amharic: "ሐምሌ",
+    geez: "ሐመለ"
+})
+
+bulkcreate(db.months, {
+    amharic: "ነሐሴ",
+    geez: "ነሐሰ"
+})
+
+bulkcreate(db.months, {
+    amharic: "ጳጉሜን",
+    geez: "ጳጕሜን"
+})
 
 // get each descrption from HTML
 const desc1 = document.querySelector('.number-desc');
@@ -1204,6 +1281,78 @@ function changeNumbers(e) {
             })
         }
 
+        else if (e.target.textContent == "20") {
+            db.numbers.get(11, function(rowEleven) { 
+                numMain.innerHTML = rowEleven["numGeez"];
+                numAmharic.innerHTML = rowEleven["amharic"];
+                numGeez.innerHTML = rowEleven["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "30") {
+            db.numbers.get(12, function(rowTwelve) { 
+                numMain.innerHTML = rowTwelve["numGeez"];
+                numAmharic.innerHTML = rowTwelve["amharic"];
+                numGeez.innerHTML = rowTwelve["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "40") {
+            db.numbers.get(13, function(rowThirteen) { 
+                numMain.innerHTML = rowThirteen["numGeez"];
+                numAmharic.innerHTML = rowThirteen["amharic"];
+                numGeez.innerHTML = rowThirteen["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "50") {
+            db.numbers.get(14, function(rowFourteen) { 
+                numMain.innerHTML = rowFourteen["numGeez"];
+                numAmharic.innerHTML = rowFourteen["amharic"];
+                numGeez.innerHTML = rowFourteen["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "60") {
+            db.numbers.get(15, function(rowFiftn) { 
+                numMain.innerHTML = rowFiftn["numGeez"];
+                numAmharic.innerHTML = rowFiftn["amharic"];
+                numGeez.innerHTML = rowFiftn["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "70") {
+            db.numbers.get(16, function(rowSixtn) { 
+                numMain.innerHTML = rowSixtn["numGeez"];
+                numAmharic.innerHTML = rowSixtn["amharic"];
+                numGeez.innerHTML = rowSixtn["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "80") {
+            db.numbers.get(17, function(rowSeventn) { 
+                numMain.innerHTML = rowSeventn["numGeez"];
+                numAmharic.innerHTML = rowSeventn["amharic"];
+                numGeez.innerHTML = rowSeventn["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "90") {
+            db.numbers.get(18, function(rowEightn) { 
+                numMain.innerHTML = rowEightn["numGeez"];
+                numAmharic.innerHTML = rowEightn["amharic"];
+                numGeez.innerHTML = rowEightn["geez"];
+            })
+        }
+
+        else if (e.target.textContent == "100") {
+            db.numbers.get(19, function(rowNintn) { 
+                numMain.innerHTML = rowNintn["numGeez"];
+                numAmharic.innerHTML = rowNintn["amharic"];
+                numGeez.innerHTML = rowNintn["geez"];
+            })
+        }
+
         e.target.style.background = '#6d4512';
         e.target.style.color = 'white';
 
@@ -1221,7 +1370,7 @@ function searchNumbers() {
 
     //get search letter input
 
-    var number = number_input.value.charAt(0);
+    var number = number_input.value;
 
 
     loop1:
@@ -1319,6 +1468,96 @@ function searchNumbers() {
         })  
     }
 
+    else if (number == "9") {
+        $('#numCarousel').carousel(2);
+        db.numbers.get(9, function(rowNine) {
+            numMain.innerHTML = rowNine['numGeez'];
+            numAmharic.innerHTML = rowNine['amharic'];
+            numGeez.innerHTML = rowNine['geez'];
+        })  
+    }
+
+    else if (number == "10") {
+        $('#numCarousel').carousel(2);
+        db.numbers.get(10, function(rowTen) {
+            numMain.innerHTML = rowTen['numGeez'];
+            numAmharic.innerHTML = rowTen['amharic'];
+            numGeez.innerHTML = rowTen['geez'];
+        })  
+    }
+
+    else if (number == "20") {
+        $('#numCarousel').carousel(2);
+        db.numbers.get(11, function(rowEleven) {
+            numMain.innerHTML = rowEleven['numGeez'];
+            numAmharic.innerHTML = rowEleven['amharic'];
+            numGeez.innerHTML = rowEleven['geez'];
+        })  
+    }
+
+    else if (number == "30") {
+        $('#numCarousel').carousel(2);
+        db.numbers.get(12, function(rowTwelve) {
+            numMain.innerHTML = rowTwelve['numGeez'];
+            numAmharic.innerHTML = rowTwelve['amharic'];
+            numGeez.innerHTML = rowTwelve['geez'];
+        })  
+    }
+
+    else if (number == "40") {
+        $('#numCarousel').carousel(3);
+        db.numbers.get(13, function(rowThirteen) {
+            numMain.innerHTML = rowThirteen['numGeez'];
+            numAmharic.innerHTML = rowThirteen['amharic'];
+            numGeez.innerHTML = rowThirteen['geez'];
+        })  
+    }
+
+    else if (number == "50") {
+        $('#numCarousel').carousel(3);
+        db.numbers.get(14, function(rowFourtn) {
+            numMain.innerHTML = rowFourtn['numGeez'];
+            numAmharic.innerHTML = rowFourtn['amharic'];
+            numGeez.innerHTML = rowFourtn['geez'];
+        })  
+    }
+
+    else if (number == "60") {
+        $('#numCarousel').carousel(3);
+        db.numbers.get(15, function(rowFiftn) {
+            numMain.innerHTML = rowFiftn['numGeez'];
+            numAmharic.innerHTML = rowFiftn['amharic'];
+            numGeez.innerHTML = rowFiftn['geez'];
+        })  
+    }
+
+    else if (number == "70") {
+        $('#numCarousel').carousel(3);
+        db.numbers.get(16, function(rowSixtn) {
+            numMain.innerHTML = rowSixtn['numGeez'];
+            numAmharic.innerHTML = rowSixtn['amharic'];
+            numGeez.innerHTML = rowSixtn['geez'];
+        })  
+    }
+
+    else if (number == "80") {
+        $('#numCarousel').carousel(4);
+        db.numbers.get(17, function(rowSeventn) {
+            numMain.innerHTML = rowSeventn['numGeez'];
+            numAmharic.innerHTML = rowSeventn['amharic'];
+            numGeez.innerHTML = rowSeventn['geez'];
+        })  
+    }
+
+    else if (number == "90") {
+        $('#numCarousel').carousel(4);
+        db.numbers.get(18, function(rowEightn) {
+            numMain.innerHTML = rowEightn['numGeez'];
+            numAmharic.innerHTML = rowEightn['amharic'];
+            numGeez.innerHTML = rowEightn['geez'];
+        })  
+    }
+
     else {
         number_input.style.borderColor = "red";
 
@@ -1326,15 +1565,58 @@ function searchNumbers() {
       
 }
 
-window.onscroll = function(ev) {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        // you're at the bottom of the page
-            numberTab.classList.remove('disabled');
-           
-    }
-};
+db.months.get(1,function(firstRow) {
+    monthOne.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
 
-    }
-      
-}
+db.months.get(2,function(firstRow) {
+    monthTwo.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
 
+
+db.months.get(3,function(firstRow) {
+    monthThree.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+
+db.months.get(4,function(firstRow) {
+    monthFour.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+
+db.months.get(5,function(firstRow) {
+    monthFive.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+
+db.months.get(6,function(firstRow) {
+    monthSix.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(7,function(firstRow) {
+    monthSeven.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(8,function(firstRow) {
+    monthEight.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(9,function(firstRow) {
+    monthNine.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(10,function(firstRow) {
+    monthTen.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(11,function(firstRow) {
+    monthEleven.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(12,function(firstRow) {
+    monthTwelve.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
+
+db.months.get(13,function(firstRow) {
+    monthThirteen.innerHTML = `${firstRow['amharic']} : ${firstRow['geez']}`
+})
