@@ -14,17 +14,20 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/6454e424b1.js" crossorigin="anonymous"></script>
 
-
-
 </head>
 <body> 
-    
+
     <nav class="navbar nav-custom navbar-expand-md navbar-light sticky-top">
         <li class="nav-link mr-5">
             <a class="navbar-brand custom-brand" href="../index.html">የኔታ</a>
         </li>
 
-        <div class="collapse navbar-collapse">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fas fa-hamburger"></i></span>
+       </button>
+
+
+        <div class="collapse navbar-collapse" id="colNav">
             <ul class="navbar-nav">
                 <li class="nav-item ml-4 mr-5">
                     <a class="nav-link active" href="./index.html">መነሻ</a>
@@ -34,7 +37,7 @@
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="./otherPages/learn.html">ትምህርት</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="./otherPages/level1.html">ደረጃ አንድ</a>
+                        <a class="dropdown-item" href="./otherPages/registerLogin.html">ደረጃ አንድ</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="./otherPages/level2.html">ደረጃ ሁለት</a>
                         <div class="dropdown-divider"></div>
@@ -50,6 +53,18 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./otherPages/contact.html">አግኙን</a> 
                 </li>
+            </ul>
+        </div>
+        <span class="person_label mt-2">Ruth M.</span>
+
+        <div class="nav-item dropdown remove-list mt-3">
+            <a class="nav-link dropdown-toggle person-icon" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="far fa-user user-icon mb-2"></i>
+            </a>
+            <ul class="dropdown-menu w-75" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="./otherPages/registerLogin.html"><i class="fas fa-user-plus mr-2"></i>ተመዝገብ</a>
+              <a class="dropdown-item" href="./otherPages/registerLogin.html"><i class="fas fa-sign-in-alt mr-2"></i> ግባ</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt mr-2"></i>ውጣ</a>
             </ul>
         </div>
     </nav>
@@ -205,9 +220,6 @@
 
      <!-- Dexie API -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/3.0.3/dexie.min.js" integrity="sha512-aEtNzq8X5E0ambgeM68H174SOXaANJ6wDqJ0TuVIx4R2J4fRdUA0nLzx0faA1mmViqb+r0VX7cOXkskxyJENUA==" crossorigin="anonymous"></script> 
-
-     <!-- Custom Javascript -->
-     <script src="./assets/js/main.js" type="module"></script>
 
 </body>
 </html>

@@ -3,6 +3,8 @@ body {
 
 }
 
+
+
 .logo {
     color: rgb(24, 24, 24);
     font-size: 8vw;
@@ -16,7 +18,7 @@ body {
     border-bottom: rgba(187, 94, 28, 0.733) solid 2px;
 }
 
-.nav-custom a:hover {
+.nav-custom .collapse a:hover {
     color: white!important;
     background: chocolate;
 }
@@ -931,3 +933,31 @@ footer button.show{
 }
 
 
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+ }
+
+ .person_label {
+    color: chocolate;
+    font-size: 22px;
+    display: none;
+  }
+
+  .user-icon {
+      font-size: 22px;
+  }
+
+@media screen and (max-width: 1200px) {
+    .navbar .collapse {
+        background-color: rgba(216, 216, 216, 0.76);
+    }
+}
+
+.remove-list {
+    list-style-type: none;
+}
+
+.person-icon {
+    margin-right: 80px;
+}

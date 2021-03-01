@@ -18,9 +18,10 @@ html,body{
 }
 .wrapper{
   overflow: hidden;
-  max-width: 390px;
-  background: #fff;
-  padding: 30px;
+  max-width: 540px;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.801);
+  padding: 50px;
   border-radius: 5px;
   box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
 }
@@ -180,3 +181,4 @@ form .btn input[type="submit"]{
   font-weight: 500;
   cursor: pointer;
 }
+

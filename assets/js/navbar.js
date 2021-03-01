@@ -6,10 +6,10 @@ window.onscroll = function() {
   //   document.getElementById("navbar").style.display = "none";
   // }
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0px";
+    document.querySelector(".navbar").style.top = "0px";
   } 
   if(currentScrollPos > prevScrollpos) {
-    document.getElementById("navbar").style.top = " -50px";
+    document.querySelector(".navbar").style.top = " -50px";
     // document.getElementById("navbar").style.top = " -50";
 
   }
