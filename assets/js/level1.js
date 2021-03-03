@@ -7,8 +7,6 @@ const db = productdb("GeezDB",{
     numbers: `++id, amharic, geez, numGeez`, 
     months: `++id, amharic, geez`,
     //verb: `++id, verbG, verbAm, verbQ, verbA, verbB, verbM, verbGi, verbW`
-
-
 });
 
 var count = 0;
