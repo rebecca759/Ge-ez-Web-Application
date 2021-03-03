@@ -1,8 +1,10 @@
-const productdb = (dbname,table1,table2,table3) => {
+const productdb = (dbname,table1,table2,table3, table4, table5, table6) => {
     //create database
     
     const db = new Dexie(dbname)
-    db.version(1).stores(table1,table2,table3);
+
+    db.version(1).stores(table1,table2, table3, table4, table5, table6);
+
     db.open();
 
     /* const db = new Dexie("geez_database");

@@ -5,7 +5,10 @@ import productdb, {
 const db = productdb("GeezDB",{
     letters: `++id, letter1, letter2, letter3, letter4, letter5, letter6, letter7`, 
     numbers: `++id, amharic, geez, numGeez`, 
-    months: `++id, amharic, geez`
+    months: `++id, amharic, geez`,
+    //verb: `++id, verbG, verbAm, verbQ, verbA, verbB, verbM, verbGi, verbW`
+
+
 });
 
 var count = 0;
@@ -57,6 +60,10 @@ const monthTen = document.querySelector('.month-10');
 const monthEleven = document.querySelector('.month-11');
 const monthTwelve = document.querySelector('.month-12');
 const monthThirteen = document.querySelector('.month-13');
+
+
+
+
 
 
 //Populate the database
@@ -574,6 +581,8 @@ bulkcreate(db.months, {
     amharic: "ጳጉሜን",
     geez: "ጳጕሜን"
 })
+
+
 
 // get each descrption from HTML
 const desc1 = document.querySelector('.number-desc');
@@ -1644,7 +1653,6 @@ db.months.get(13,function(firstRow) {
 })
 
 
-
 numTab.addEventListener('click',alertNum)
 daysTab.addEventListener('click',alertDay)
 monthTab.addEventListener('click',alertMonth)
@@ -1717,3 +1725,4 @@ function alertTest(e) {
     
     }
 }
+

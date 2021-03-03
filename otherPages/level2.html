@@ -85,14 +85,13 @@
 
                     <div class="letter-container mt-5">
                         <h2 class="ml-4 light mt-4"> የግስ አወራረድ</h2>
-                        <li class="ml-4 days mb-3">ነበረ (ግስ) ፡ ተቀመጠ (የአማርኛ ፍቺ)  </li>
-                        <li class="ml-4 days mb-3">ይነብሮ ፡  ይቀመጥ (ትዕዛዝ)</li>
-                        <li class="ml-4 days mb-3">ይነብሮ ፡  ይቀመጥ (ዘንድ)</li>
-                        <li class="ml-4 days mb-3">ነቢር ፡ መቀመጥ </li>
-                        <li class="ml-4 days mb-3"> ነባሪ ፡ የተቀመጠ ወንድ  </li>
-                        <li class="ml-4 days mb-3">ነባሪያን ፡ የተቀመጡ ወንዶች </li>
-                        <li class="ml-4 days mb-3">ነባሪት ፡ የተቀመጠች ሴት </li>
-                        <li class="ml-4 days mb-3">ነባሪያተ ፡ የተቀመጡ ሴቶች </li>
+                        <li class="ml-4 days mb-3 verb" ></li>
+                        <li class="ml-4 days mb-3 verbQ"></li>
+                        <li class="ml-4 days mb-3 verbA"></li>
+                        <li class="ml-4 days mb-3 verbB"></li>
+                        <li class="ml-4 days mb-3 verbM"></li>
+                        <li class="ml-4 days mb-3 verbG"></li>
+                        <li class="ml-4 days mb-3 verbW"></li>
                         
                     </div>
 
@@ -111,15 +110,15 @@
                         <div class="row">
                             <div class="col-6">
                                 <form class="form-inline">
-                                    <input id="search-letters" class="form-control ml-3" type="search" placeholder="ሆሄ ፈልግ" aria-label="Search">
-                                    <button id="searchlet-btn" class="btn btn-outline-custom ml-2 my-sm-2" type="button">ፈልግ</button>
+                                    <input id="search-verbG" class="form-control ml-3" type="search" placeholder="ሆሄ ፈልግ" aria-label="Search">
+                                    <button id="searchbtn-verbG" class="btn btn-outline-custom ml-2 my-sm-2" type="button">ፈልግ</button>
                                   </form>
                             </div>
 
                             <div class="col-6">
                                 <form class="form-inline">
-                                    <input id="search-letters" class="form-control ml-5" type="search" placeholder="ሆሄ ፈልግ" aria-label="Search">
-                                    <button id="searchlet-btn" class="btn btn-outline-custom ml-2 my-sm-2" type="button">ፈልግ</button>
+                                    <input id="search-verbA" class="form-control ml-5" type="search" placeholder="ሆሄ ፈልግ" aria-label="Search">
+                                    <button id="searchbtn-verbA" class="btn btn-outline-custom ml-2 my-sm-2" type="button">ፈልግ</button>
                                   </form>
                             </div>
 
@@ -226,6 +225,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Custom Javascript -->
-    <script src="../assets/js/script.js"></script>
+    <script type="module" src="../assets/js/level2Db.js"></script>
+
+    <!-- Dexie API -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/3.0.3/dexie.min.js" integrity="sha512-aEtNzq8X5E0ambgeM68H174SOXaANJ6wDqJ0TuVIx4R2J4fRdUA0nLzx0faA1mmViqb+r0VX7cOXkskxyJENUA==" crossorigin="anonymous"></script> 
+
 </body>
 </html>
