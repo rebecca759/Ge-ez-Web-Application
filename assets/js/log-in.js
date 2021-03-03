@@ -3,6 +3,7 @@ const userNameInput = document.getElementById('email');
 const pwdInput = document.getElementById('password');
 const formLogin = document.getElementById('login-form');
 const showError = document.querySelector('.show-error');
+const nameInput = document.getElementById('name');
 
 var userAuthenticated = false;
 

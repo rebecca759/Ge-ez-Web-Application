@@ -5,6 +5,7 @@ const loginText = document.querySelector(".title-text .login");
       const signupLink = document.querySelector("form .signup-link a");
       const form = document.querySelector("form.signup");
       const username = document.getElementById('email2');
+      const nameInput = document.getElementById('name');
       const password = document.getElementById('password1');
       const password2 = document.getElementById('password2');
 
@@ -41,7 +42,7 @@ form.addEventListener('submit', (e)=> {
                 let newUser = {
                     userName: username.value.trim(), 
                     password: password.value.trim(), 
-                    
+                    name: nameInput.value.trim()
                 }
 
                 let addUserRequest = userStore.add(newUser);
@@ -65,12 +66,20 @@ function checkInputs(){
     const usernamevalue = username.value.trim();
     const passwordvalue = password.value.trim();
     const password2value = password2.value.trim();
+    const namevalue = nameInput.value.trim();
 
     if(usernamevalue === ''){
         setErrorFor(username, 'username cant be blank');    
     } else {
 
         setSuccessFor(username);
+    }
+
+    if(namevalue === ''){
+        setErrorFor(nameInput, 'username cant be blank');    
+    } else {
+
+        setSuccessFor(nameInput);
     }
 
     if(passwordvalue === ''){
@@ -97,7 +106,7 @@ function setErrorFor(input, message){
 }
 
 
-function setSuccessFor(input){
+function setSuccessFor(input) {
     const formControl = input.parentElement;
     formControl.className = 'field form-control success'
 }
