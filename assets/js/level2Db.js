@@ -3,7 +3,8 @@ import productdb, {
 } from './module.js'
 
 const db = productdb("levelTwoGeezDB",{
-    verb: `++id, verbG, verbAm, verbQ, verbA, verbB, verbM, verbGi, verbW`
+    verb: `++id, verbG, verbAm, verbQ, verbA, verbB, verbM, verbGi, verbW`,
+    sentence: `++id, qene, fetchi, secret `
 
 
 });
@@ -35,6 +36,27 @@ bulkcreate(db.verb, {
     verbM: "ነባሪያን ፡ የተቀመጡ ወንዶች",
     verbGi: "ነባሪት ፡ የተቀመጠች ሴት",
     verbW: "ነባሪያተ ፡ የተቀመጡ ሴቶች",
+})
+
+bulkcreate(db.verb, {
+    verbG: "ሖረ",
+    verbAm: "ሄደ",
+    verbQ: "ይሑር ፡  ይሂድ (ትዕዛዝ)",
+    verbA: "ሐዊር ፡ መሄድ",
+    verbB: "ሐዋሪ ፡ የሄደ ወንድ",
+    verbM: "ሐዋሪያን ፡ የሄዱ ወንዶች",
+    verbGi: "ሐዋሪተ ፡ የሄደች ሴት",
+    verbW: "ሐዋሪያት ፡ የሄዱ ሴቶች",
+})
+bulkcreate(db.verb, {
+    verbG: "ተምህረ",
+    verbAm: "ተማረ",
+    verbQ: "ይተመሀር ፡  ይማር (ትዕዛዝ)",
+    verbA: "ተምህሮ/ተምህሮት ፡ መሄድ",
+    verbB: "ሐዋሪ ፡ የሄደ ወንድ",
+    verbM: "ሐዋሪያን ፡ የሄዱ ወንዶች",
+    verbGi: "ሐዋሪተ ፡ የሄደች ሴት",
+    verbW: "ሐዋሪያት ፡ የሄዱ ሴቶች",
 })
 
 bulkcreate(db.verb, {
