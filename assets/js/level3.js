@@ -1,7 +1,9 @@
 const list_item = document.querySelector('.my-list');
 let lists = list_item.children;
+const testTab = document.querySelector('.test_tab');
 
 list_item.addEventListener('click',change);
+testTab.addEventListener('click',alertTest)
 
 function change(e) {
     console.log('jj')
@@ -26,4 +28,19 @@ function change(e) {
         e.target.style.color = 'white';
     }
     
+}
+
+function alertTest(e) {
+    if (e.target.classList.contains('disabled')) {
+        alert("ፈተና ለመፈተን ይህንን ገጽ ይጨርሱ")
+    }
+
+    window.onscroll = function(ev) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight-2) {
+            // you're at the bottom of the page
+            testTab.classList.remove('disabled')
+            removed_num = true;
+        }
+    
+    }
 }

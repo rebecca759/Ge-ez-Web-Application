@@ -1,3 +1,8 @@
+const sentTab = document.querySelector('.sent_tab');
+const testTab = document.querySelector('.test_tab');
+
+
+
 const list_item = document.querySelector('.my-list');
 let lists = list_item.children;
 
@@ -27,3 +32,41 @@ function change(e) {
     }
     
 }
+
+sentTab.addEventListener('click',alertSent)
+testTab.addEventListener('click',alertTest)
+
+function alertSent(e) {
+    console.log('he')
+    if (e.target.classList.contains('disabled')) {
+        alert("ወደ አረፍተ ነገሮች ገጽ ለመሄድ ይህንን ገጽ ይጨርሱ")
+    }
+
+    window.onscroll = function(ev) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight-2) {
+            // you're at the bottom of the page
+            console.log('scrolld')
+            sentTab.classList.remove('disabled')
+            removed_num = true;
+
+        }
+    
+    }
+}   
+
+function alertTest(e) {
+    if (e.target.classList.contains('disabled')) {
+        alert("ፈተና ለመፈተን ይህንን ገጽ ይጨርሱ")
+    }
+
+    window.onscroll = function(ev) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight-2) {
+            // you're at the bottom of the page
+            console.log('scrolld')
+            testTab.classList.remove('disabled')
+            removed_num = true;
+        }
+    
+    }
+}
+
