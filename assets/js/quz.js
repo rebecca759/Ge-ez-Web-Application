@@ -10,8 +10,10 @@ const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 const link = document.querySelector(".link");
-const card = document.querySelector(".link.card");
-const game = document.querySelector(".link.game")
+const card = document.querySelector(".card");
+const game = document.querySelector(".game");
+const dereja2 = document.querySelector('#d2');
+
 
 // if startQuiz button clicked
 start_btn.onclick = ()=>{
@@ -168,6 +170,11 @@ function showResult(){
         let scoreTag = '<span>ይቅርታ 😐, ያገኙት <p>'+ userScore +'</p> ከ <p>'+ questions.length + 'ብቻ ነው፡፡'+'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
+    if (userScore > 1) {
+        game.style.visibility = "visible";
+        card.style.visibility = "visible";
+
+      }
 }
 
 function startTimer(time){
@@ -215,6 +222,14 @@ function queCounter(index){
     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
-// if (userScore > 1){
-//     game.innerHTML = `game`
-// }
+dereja2.onclick = function (){
+    //var a = document.querySelector('#d2');
+    if (userScore > 1) {
+      dereja2.setAttribute('href', './level2.html')
+    }}
+    game.style.visibility = "hidden";
+    card.style.visibility = "hidden";
+       
+       
+    
+    
