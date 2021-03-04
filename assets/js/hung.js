@@ -1,9 +1,12 @@
 var programming_languages = [
-	"ስምረት",
-	"ሩት",
-	"ርብቃ",
-	
-	"መቅደስ"
+	"ያአምር",
+  "አእማቴ",
+  "አእማርን",
+  "ተመሓረ",
+  "ሓማሚተ",
+  "ሓመሚያን",
+  "ኣእማቴ",
+  "ይህምም"
 ]
 
 let answer = '';
@@ -17,7 +20,7 @@ function randomWord() {
 }
 
 function generateButtons() {
-  let buttonsHTML = 'ሀሁሂሃሄህሆለሉሊላሌልሎሐሑሒትሓሔሕሖመሙሚማሜምሞሠሡሢሣሤሥሦረሩሪራሬርሮሰሱሲሳሴስሶሸሹሺሻሼሽሾቀቁቂቃቄቅቆበቡቢባቤብቦተቱቲታቴትቶ'.split('').map(letter =>
+  let buttonsHTML = 'ያአተሓኣይርቴንረተንቴእማምርማመሚሀ'.split('').map(letter =>
     `
       <button
         class="btn btn-lg btn-primary m-2"
