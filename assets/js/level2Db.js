@@ -59,7 +59,56 @@ bulkcreate(db.verb, {
     verbW: "ሐዋሪያት ፡ የሄዱ ሴቶች",
 })
 
-
+bulkcreate(db.verb, {
+    verbG: "ያአምር",
+    verbAm: "አእማቴ",
+    verbQ: "አእማርን፡ አዋቂዎችህ",
+    verbA: "ተመሓረ ፡የሚማር",
+    verbB: "ሓማሚተ፡የታመመች ሴት",
+    verbM: "ሓመሚያን ፡ብዙ የታመመኡ ወንድዶች ",
+    verbGi: "ኣእማቴ ፡አዋቂ ",
+    verbW: "ይህምም ፡ ይታመም",
+})
+bulkcreate(db.verb, {
+    verbG: "ገቡር",
+    verbAm: "በከየ",
+    verbQ: "ይበኪ ፡  ይሂድ ",
+    verbA: "ይልኪ፡ያለቅስ ዘንድ",
+    verbB: "በነዮ ፡ አልቃስ",
+    verbM: "ሓመ ፡ታመመ  ",
+    verbGi: "የሓምም፡ ይታመማል",
+    verbW: " ሓምሚ፡የታመመ ",
+})
+bulkcreate(db.verb, {
+    verbG: "ፍጡር",
+    verbAm: "ፍጡር",
+    verbQ: "ያእምር ፤ያውቅ ዘንድ",
+    verbA: "በከየ፡አለቀሰ ",
+    verbB: "ነባሪ ፡ ተቀማጭ",
+    verbM: "ተባሪያት፡የተቀመቱ ሴትች ",
+    verbGi: "የሓምም፡ይታመማል",
+    verbW: "ሓሚሞት ፡መታመም ",
+})
+bulkcreate(db.verb, {
+    verbG: "ፈጠረ",
+    verbAm: "ይፈጥር",
+    verbQ: "ይፍጠር ፡ ይፍጠር",
+    verbA: "ፈጣሪ ፡ የፈጠረ ወንድ",
+    verbB: "ፈጢር ፡መፍጠር",
+    verbM: "ፈጣሪያት ፡ብዙ የፈጠሩ ወንዶች ",
+    verbGi: "ይፍጠር ፡ይፈጥር ዘንድ ",
+    verbW: "ፈጠራሆሙ፡ፈጠራቸው ",
+})
+bulkcreate(db.verb, {
+    verbG: "መሓረ",
+    verbAm: "አንተማረ",
+    verbQ: "መሓሪት ፡አስተማረች  ",
+    verbA: "ምሂር ፡ ማሰተማር",
+    verbB: "መሓሪ፡ አስተማሪ",
+    verbM: "ይሜሂር ፡ ይስተመራል",
+    verbGi: "መሓሪይን፡ብዙ ውንዶች መማር ",
+    verbW: "መሓሪ፡ አስተማሪ",
+})
 
 
 
@@ -108,6 +157,84 @@ function searchGeezVerb(){
         })
     }
 
+    else if(word == "ተምህረ") {
+        db.verb.get(3, function(rowTwo) {
+            verbGeez.innerHTML = `${rowTwo['verbG']} (ግስ) : ${rowTwo['verbAm']} (የአማርኛ ፍቺ)`;
+            verbQuest.innerHTML = rowTwo['verbQ'];
+            verbAction.innerHTML = rowTwo['verbA'];
+            verbBoy.innerHTML = rowTwo['verbB'];
+            verbMen.innerHTML = rowTwo['verbM'];
+            verbGirl.innerHTML = rowTwo['verbGi'];
+            verbWomen.innerHTML = rowTwo['verbW'];
+            
+        })
+    }
+
+    else if(word == "ያአምር") {
+        db.verb.get(4, function(rowTwo) {
+            verbGeez.innerHTML = `${rowTwo['verbG']} (ግስ) : ${rowTwo['verbAm']} (የአማርኛ ፍቺ)`;
+            verbQuest.innerHTML = rowTwo['verbQ'];
+            verbAction.innerHTML = rowTwo['verbA'];
+            verbBoy.innerHTML = rowTwo['verbB'];
+            verbMen.innerHTML = rowTwo['verbM'];
+            verbGirl.innerHTML = rowTwo['verbGi'];
+            verbWomen.innerHTML = rowTwo['verbW'];
+            
+        })
+    }
+
+    else if(word == "ገቡር") {
+        db.verb.get(5, function(rowTwo) {
+            verbGeez.innerHTML = `${rowTwo['verbG']} (ግስ) : ${rowTwo['verbAm']} (የአማርኛ ፍቺ)`;
+            verbQuest.innerHTML = rowTwo['verbQ'];
+            verbAction.innerHTML = rowTwo['verbA'];
+            verbBoy.innerHTML = rowTwo['verbB'];
+            verbMen.innerHTML = rowTwo['verbM'];
+            verbGirl.innerHTML = rowTwo['verbGi'];
+            verbWomen.innerHTML = rowTwo['verbW'];
+            
+        })
+    }
+    else if(word == "ፍጡር") {
+        db.verb.get(6, function(rowTwo) {
+            verbGeez.innerHTML = `${rowTwo['verbG']} (ግስ) : ${rowTwo['verbAm']} (የአማርኛ ፍቺ)`;
+            verbQuest.innerHTML = rowTwo['verbQ'];
+            verbAction.innerHTML = rowTwo['verbA'];
+            verbBoy.innerHTML = rowTwo['verbB'];
+            verbMen.innerHTML = rowTwo['verbM'];
+            verbGirl.innerHTML = rowTwo['verbGi'];
+            verbWomen.innerHTML = rowTwo['verbW'];
+            
+        })
+    }
+
+    else if(word == "ፈጠረ") {
+        db.verb.get(7, function(rowTwo) {
+            verbGeez.innerHTML = `${rowTwo['verbG']} (ግስ) : ${rowTwo['verbAm']} (የአማርኛ ፍቺ)`;
+            verbQuest.innerHTML = rowTwo['verbQ'];
+            verbAction.innerHTML = rowTwo['verbA'];
+            verbBoy.innerHTML = rowTwo['verbB'];
+            verbMen.innerHTML = rowTwo['verbM'];
+            verbGirl.innerHTML = rowTwo['verbGi'];
+            verbWomen.innerHTML = rowTwo['verbW'];
+            
+        })
+    }
+
+    else if(word == "መሓረ") {
+        db.verb.get(8, function(rowTwo) {
+            verbGeez.innerHTML = `${rowTwo['verbG']} (ግስ) : ${rowTwo['verbAm']} (የአማርኛ ፍቺ)`;
+            verbQuest.innerHTML = rowTwo['verbQ'];
+            verbAction.innerHTML = rowTwo['verbA'];
+            verbBoy.innerHTML = rowTwo['verbB'];
+            verbMen.innerHTML = rowTwo['verbM'];
+            verbGirl.innerHTML = rowTwo['verbGi'];
+            verbWomen.innerHTML = rowTwo['verbW'];
+            
+        })
+    }
+
+
     
 }
 
@@ -140,6 +267,84 @@ function searchAmharicVerb(){
         })
     } else if(word == "ሄደ") {
         db.verb.get(2, function(rowTwo) {
+            verbGeez.innerHTML = `${rowTwo['verbG']} (ግስ) : ${rowTwo['verbAm']} (የአማርኛ ፍቺ)`;
+            verbQuest.innerHTML = rowTwo['verbQ'];
+            verbAction.innerHTML = rowTwo['verbA'];
+            verbBoy.innerHTML = rowTwo['verbB'];
+            verbMen.innerHTML = rowTwo['verbM'];
+            verbGirl.innerHTML = rowTwo['verbGi'];
+            verbWomen.innerHTML = rowTwo['verbW'];
+            
+        })
+    }
+
+    else if(word == "ተማረ") {
+        db.verb.get(3, function(rowTwo) {
+            verbGeez.innerHTML = `${rowTwo['verbG']} (ግስ) : ${rowTwo['verbAm']} (የአማርኛ ፍቺ)`;
+            verbQuest.innerHTML = rowTwo['verbQ'];
+            verbAction.innerHTML = rowTwo['verbA'];
+            verbBoy.innerHTML = rowTwo['verbB'];
+            verbMen.innerHTML = rowTwo['verbM'];
+            verbGirl.innerHTML = rowTwo['verbGi'];
+            verbWomen.innerHTML = rowTwo['verbW'];
+            
+        })
+    }
+
+    else if(word == "አእማቴ") {
+        db.verb.get(4, function(rowTwo) {
+            verbGeez.innerHTML = `${rowTwo['verbG']} (ግስ) : ${rowTwo['verbAm']} (የአማርኛ ፍቺ)`;
+            verbQuest.innerHTML = rowTwo['verbQ'];
+            verbAction.innerHTML = rowTwo['verbA'];
+            verbBoy.innerHTML = rowTwo['verbB'];
+            verbMen.innerHTML = rowTwo['verbM'];
+            verbGirl.innerHTML = rowTwo['verbGi'];
+            verbWomen.innerHTML = rowTwo['verbW'];
+            
+        })
+    }
+
+    else if(word == "በከየ") {
+        db.verb.get(5, function(rowTwo) {
+            verbGeez.innerHTML = `${rowTwo['verbG']} (ግስ) : ${rowTwo['verbAm']} (የአማርኛ ፍቺ)`;
+            verbQuest.innerHTML = rowTwo['verbQ'];
+            verbAction.innerHTML = rowTwo['verbA'];
+            verbBoy.innerHTML = rowTwo['verbB'];
+            verbMen.innerHTML = rowTwo['verbM'];
+            verbGirl.innerHTML = rowTwo['verbGi'];
+            verbWomen.innerHTML = rowTwo['verbW'];
+            
+        })
+    }
+
+    else if(word == "ፍጡር") {
+        db.verb.get(6, function(rowTwo) {
+            verbGeez.innerHTML = `${rowTwo['verbG']} (ግስ) : ${rowTwo['verbAm']} (የአማርኛ ፍቺ)`;
+            verbQuest.innerHTML = rowTwo['verbQ'];
+            verbAction.innerHTML = rowTwo['verbA'];
+            verbBoy.innerHTML = rowTwo['verbB'];
+            verbMen.innerHTML = rowTwo['verbM'];
+            verbGirl.innerHTML = rowTwo['verbGi'];
+            verbWomen.innerHTML = rowTwo['verbW'];
+            
+        })
+    }
+
+    else if(word == "ይፈጥር") {
+        db.verb.get(7, function(rowTwo) {
+            verbGeez.innerHTML = `${rowTwo['verbG']} (ግስ) : ${rowTwo['verbAm']} (የአማርኛ ፍቺ)`;
+            verbQuest.innerHTML = rowTwo['verbQ'];
+            verbAction.innerHTML = rowTwo['verbA'];
+            verbBoy.innerHTML = rowTwo['verbB'];
+            verbMen.innerHTML = rowTwo['verbM'];
+            verbGirl.innerHTML = rowTwo['verbGi'];
+            verbWomen.innerHTML = rowTwo['verbW'];
+            
+        })
+    }
+
+    else if(word == "አንተማረ") {
+        db.verb.get(8, function(rowTwo) {
             verbGeez.innerHTML = `${rowTwo['verbG']} (ግስ) : ${rowTwo['verbAm']} (የአማርኛ ፍቺ)`;
             verbQuest.innerHTML = rowTwo['verbQ'];
             verbAction.innerHTML = rowTwo['verbA'];

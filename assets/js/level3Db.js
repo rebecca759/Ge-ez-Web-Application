@@ -74,19 +74,83 @@ next.addEventListener('click', nextQene);
 function nextQene(){
     let index = 1;
 
-    if (index < 8){
+    if (index = 1){
 
-        db.qene.get(index, function(rowOne){
+        db.qene.get(1, function(rowOne){
             qene1.innerHTML = rowOne['qene'];
             difinition.innerHTML = rowOne['fechi'];
             secret1.innerHTML = rowOne['secret'];
-    
-    
         })
-        index = index + 1;
+    
+    index+=1;
+    } 
+
+    if (index = 2){
+
+        db.qene.get(2, function(rowSix){
+            qene1.innerHTML = rowSix['qene'];
+            difinition.innerHTML = rowSix['fechi'];
+            secret1.innerHTML = rowSix['secret'];
+        })
+    
+    index+=1;
+    }
+
+    if (index = 3){
+
+        db.qene.get(3, function(rowTwo){
+            qene1.innerHTML = rowTwo['qene'];
+            difinition.innerHTML = rowTwo['fechi'];
+            secret1.innerHTML = rowTwo['secret'];
+        })
+    
+    index+=1;
+    }
+
+    if (index = 4){
+
+        db.qene.get(4, function(rowThree){
+            qene1.innerHTML = rowThree['qene'];
+            difinition.innerHTML = rowThree['fechi'];
+            secret1.innerHTML = rowThree['secret'];
+        })
+    
+    index+=1;
+    }
+
+    if (index = 5){
+
+        db.qene.get(5, function(rowFour){
+            qene1.innerHTML = rowFour['qene'];
+            difinition.innerHTML = rowFour['fechi'];
+            secret1.innerHTML = rowFour['secret'];
+        })
+    
+    index+=1;
+    }
+
+    if (index = 6){
+
+        db.qene.get(6, function(rowFive){
+            qene1.innerHTML = rowFive['qene'];
+            difinition.innerHTML = rowFive['fechi'];
+            secret1.innerHTML = rowFive['secret'];
+        })
+    
+    index+=1;
+    }
+
+    if (index = 7){
+
+        db.qene.get(7, function(rowSeven){
+            qene1.innerHTML = rowSeven['qene'];
+            difinition.innerHTML = rowSeven['fechi'];
+            secret1.innerHTML = rowSeven['secret'];
+        })
+    
+    index+=1;
     }
     
-
     if (index > 8){
         index = 1;
     }
