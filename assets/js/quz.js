@@ -13,6 +13,7 @@ const link = document.querySelector(".link");
 const card = document.querySelector(".card");
 const game = document.querySelector(".game");
 const dereja2 = document.querySelector('#d2');
+const dereja3 = document.querySelector("#d3");
 
 
 // if startQuiz button clicked
@@ -170,7 +171,7 @@ function showResult(){
         let scoreTag = '<span>ይቅርታ 😐, ያገኙት <p>'+ userScore +'</p> ከ <p>'+ questions.length + 'ብቻ ነው፡፡'+'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
-    if (userScore > 1) {
+    if (userScore > 10) {
         game.style.visibility = "visible";
         card.style.visibility = "visible";
 
@@ -224,9 +225,13 @@ function queCounter(index){
 }
 dereja2.onclick = function (){
     //var a = document.querySelector('#d2');
-    if (userScore > 1) {
+    if (userScore > 10) {
       dereja2.setAttribute('href', './level2.html')
-    }}
+      dereja3.setAttribute('href', './level3.html')
+    }
+else{
+    alert("ይህን ደረጃ ለመክፈት ፈተናውን መፈተን እና ከ 10 በላይ ማምጣት ይጠበቅበዎታል!")
+}}
     game.style.visibility = "hidden";
     card.style.visibility = "hidden";
        
