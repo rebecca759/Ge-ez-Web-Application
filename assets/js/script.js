@@ -1067,23 +1067,96 @@ function searchLetters() {
     }
 
     else if (letter == "በ" || letter == "ቡ" || letter == "ቢ" || letter == "ባ" || letter == "ቤ" || letter == "ብ" || letter == "ቦ") {
+        letter_class = "በ";
+    }
+
+    else if (letter == "ተ" || letter == "ቱ" || letter == "ቲ" || letter == "ታ" || letter == "ቴ" || letter == "ት" || letter == "ቶ") {
         letter_class = "ቀ";
     }
 
-    else if (letter == "ቀ" || letter == "ቁ" || letter == "ቂ" || letter == "ቃ" || letter == "ቂ" || letter == "ቃ" || letter == "ቆ") {
-        letter_class = "ቀ";
+    else if (letter == "ቸ" || letter == "ቹ" || letter == "ቺ" || letter == "ቻ" || letter == "ቼ" || letter == "ች" || letter == "ቾ") {
+        letter_class = "ቸ";
     }
 
-    else if (letter == "ቀ" || letter == "ቁ" || letter == "ቂ" || letter == "ቃ" || letter == "ቂ" || letter == "ቃ" || letter == "ቆ") {
-        letter_class = "ቀ";
+    else if (letter == "ነ" || letter == "ኑ" || letter == "ኒ" || letter == "ና" || letter == "ኔ" || letter == "ን" || letter == "ኖ") {
+        letter_class = "ነ";
     }
 
-    else if (letter == "ቀ" || letter == "ቁ" || letter == "ቂ" || letter == "ቃ" || letter == "ቂ" || letter == "ቃ" || letter == "ቆ") {
-        letter_class = "ቀ";
+    else if (letter == "ኘ" || letter == "ኙ" || letter == "ኚ" || letter == "ኛ" || letter == "ኜ" || letter == "ኝ" || letter == "ኞ") {
+        letter_class = "ኘ";
     }
-    else if (letter == "ቀ" || letter == "ቁ" || letter == "ቂ" || letter == "ቃ" || letter == "ቂ" || letter == "ቃ" || letter == "ቆ") {
-        letter_class = "ቀ";
+
+    else if (letter == "አ" || letter == "ኡ" || letter == "ኢ" || letter == "ኣ" || letter == "ኤ" || letter == "እ" || letter == "ኦ") {
+        letter_class = "አ";
     }
+
+    else if (letter == "ከ" || letter == "ኩ" || letter == "ኪ" || letter == "ካ" || letter == "ኬ" || letter == "ክ" || letter == "ኮ") {
+        letter_class = "ከ";
+    }
+
+    else if (letter == "ወ" || letter == "ዉ" || letter == "ዊ" || letter == "ዋ" || letter == "ዌ" || letter == "ው" || letter == "ዎ") {
+        letter_class = "ወ";
+    }
+
+    else if (letter == "ዐ" || letter == "ዑ" || letter == "ዒ" || letter == "ዓ" || letter == "ዔ" || letter == "ዕ" || letter == "ዖ") {
+        letter_class = "ዐ";
+    }
+
+    else if (letter == "ዘ" || letter == "ዙ" || letter == "ዚ" || letter == "ዛ" || letter == "ዜ" || letter == "ዝ" || letter == "ዞ") {
+        letter_class = "ዘ";
+    }
+
+    else if (letter == "ዥ" || letter == "ዡ" || letter == "ዢ" || letter == "ዣ" || letter == "ዤ" || letter == "ዥ" || letter == "ዦ") {
+        letter_class = "ዥ";
+    }
+
+    else if (letter == "የ" || letter == "ዩ" || letter == "ዪ" || letter == "ያ" || letter == "ዬ" || letter == "ይ" || letter == "ዮ") {
+        letter_class = "የ";
+    }
+
+    else if (letter == "ደ" || letter == "ዱ" || letter == "ዲ" || letter == "ዳ" || letter == "ዴ" || letter == "ድ" || letter == "ዶ") {
+        letter_class = "ደ";
+    }
+
+    else if (letter == "ጀ" || letter == "ጁ" || letter == "ጂ" || letter == "ጃ" || letter == "ጄ" || letter == "ጅ" || letter == "ጆ") {
+        letter_class = "ጀ";
+    }
+
+    else if (letter == "ገ" || letter == "ጉ" || letter == "ጊ" || letter == "ጋ" || letter == "ጌ" || letter == "ግ" || letter == "ጎ") {
+        letter_class = "ገ";
+    }
+
+    else if (letter == "ጠ" || letter == "ጡ" || letter == "ጢ" || letter == "ጣ" || letter == "ጤ" || letter == "ጥ" || letter == "ጦ") {
+        letter_class = "ጠ";
+    }
+
+    else if (letter == "ጨ" || letter == "ጩ" || letter == "ጪ" || letter == "ጫ" || letter == "ጬ" || letter == "ጭ" || letter == "ጮ") {
+        letter_class = "ጨ";
+    }
+
+    else if (letter == "ጸ" || letter == "ጹ" || letter == "ጺ" || letter == "ጻ" || letter == "ጼ" || letter == "ጽ" || letter == "ጾ") {
+        letter_class = "ጸ";
+    }
+
+    else if (letter == "ፀ" || letter == "ፁ" || letter == "ፂ" || letter == "ፃ" || letter == "ፄ" || letter == "ፅ" || letter == "ፆ") {
+        letter_class = "ፀ";
+    }
+
+    else if (letter == "ፈ" || letter == "ፉ" || letter == "ፊ" || letter == "ፉ" || letter == "ፌ" || letter == "ፍ" || letter == "ፎ") {
+        letter_class = "ፈ";
+    }
+
+    else if (letter == "ፐ" || letter == "ፑ" || letter == "ፒ" || letter == "ፓ" || letter == "ፔ" || letter == "ፕ" || letter == "ፖ") {
+        letter_class = "ፐ";
+    }
+
+    else if (letter == "ቨ" || letter == "ቩ" || letter == "ቪ" || letter == "ቫ" || letter == "ቬ" || letter == "ቭ" || letter == "ቮ") {
+        letter_class = "ቨ";
+    }
+
+    
+    
+
 
 
     loop1:
