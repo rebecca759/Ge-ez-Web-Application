@@ -1062,6 +1062,25 @@ function searchLetters() {
         letter_class = "ሸ";
     }
 
+    else if (letter == "ቀ" || letter == "ቁ" || letter == "ቂ" || letter == "ቃ" || letter == "ቄ" || letter == "ቃ" || letter == "ቆ") {
+        letter_class = "ቀ";
+    }
+
+    else if (letter == "በ" || letter == "ቡ" || letter == "ቢ" || letter == "ባ" || letter == "ቤ" || letter == "ብ" || letter == "ቦ") {
+        letter_class = "ቀ";
+    }
+
+    else if (letter == "ቀ" || letter == "ቁ" || letter == "ቂ" || letter == "ቃ" || letter == "ቂ" || letter == "ቃ" || letter == "ቆ") {
+        letter_class = "ቀ";
+    }
+
+    else if (letter == "ቀ" || letter == "ቁ" || letter == "ቂ" || letter == "ቃ" || letter == "ቂ" || letter == "ቃ" || letter == "ቆ") {
+        letter_class = "ቀ";
+    }
+
+    else if (letter == "ቀ" || letter == "ቁ" || letter == "ቂ" || letter == "ቃ" || letter == "ቂ" || letter == "ቃ" || letter == "ቆ") {
+        letter_class = "ቀ";
+    }
     else if (letter == "ቀ" || letter == "ቁ" || letter == "ቂ" || letter == "ቃ" || letter == "ቂ" || letter == "ቃ" || letter == "ቆ") {
         letter_class = "ቀ";
     }
