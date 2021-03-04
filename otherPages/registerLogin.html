@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../assets/css/login.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+crossorigin="anonymous">
+
+<style>
+  body {
+    background: -webkit-linear-gradient(bottom, rgba(104, 99, 95, 0.459), rgba(177, 132, 100, 0.459));
+  }
+
+  h4 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(71, 71, 71);
+  }
+
+
+  div.login, div.signup {
+    color: rgb(71, 71, 71);
+  }
+
+</style>
+</head>
+
+<body>
+  <h4>ትምህርት ለመጀመር ይግቡ</h4>
+  <div class="wrapper mt-n5">
+    <div class="title-text">
+
+      <div class="title login">
+        የመግብያ ቅጽ</div>
+      <div class="title signup">
+        የመመዝገብያ ቅጽ</div>
+    </div>
+    <div class="form-container">
+      <div class="slide-controls">
+        <input type="radio" name="slide" id="login" checked>
+        <input type="radio" name="slide" id="signup">
+        <label for="login" class="slide login">ግባ</label>
+        <label for="signup" class="slide signup">ተመዝገብ</label>
+        <div class="slider-tab">
+        </div>
+      </div>
+      <div class="form-inner">
+        <form action="level1.html" class="login" id="login-form">
+    
+          <div class="field">
+            <input type="email" placeholder="የኢሜል አድራሻ" type="email" id="email"
+            pattern=".+@gmail.com" id="userName" class="form-control" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="የይለፍ ቃል" id="password" required>
+          </div>
+
+          <div class="show-error"></div>
+
+          <div class="pass-link">
+            <a href="#">የይለፍ ቃል ረሱ?</a>
+          </div>
+          <div class="field btn">
+            <div class="btn-layer">
+            </div>
+            <input type="submit" value="ግባ">
+          </div>
+          <div class="signup-link">
+            አባል አይድሉም? <a href="">ይመዝገቡ</a></div>
+        </form>
+        <form action="registerLogin.html" class="signup">
+          <div class="field">
+            <input type="text" placeholder="ስም" id="name" required>
+          </div>
+          
+          <div class="field">
+            <input type="text" placeholder="የኢሜል አድራሻ" type="email" id="email2"
+            pattern=".+@gmail.com" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="የይለፍ ቃል" id="password1" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="የይለፍ ቃል አረጋግጥ" id="password2" required>
+            <small></small>
+          </div>
+          <div class="field btn">
+            <div class="btn-layer">
+            </div>
+            <input type="submit" value="ተመዝገብ">
+          </div>
+        </form>
+        <div class="signUp-success text-center"></div>
+
+      </div>
+    </div>
+  </div>
+  <script src="../assets/js/logDatabase.js"></script>
+  <script src="../assets/js/sign-up.js"></script>
+  <script src="../assets/js/log-in.js"></script>
+
+</body>
+
+</html>

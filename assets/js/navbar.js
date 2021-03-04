@@ -2,10 +2,14 @@
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
+  // if(currentScrollPos == 0){
+  //   document.getElementById("navbar").style.display = "none";
+  // }
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.display = "none";
-  } else {
-    document.getElementById("navbar").style.top = " 0";
+    document.querySelector(".navbar").style.top = "0px";
+  } 
+  if(currentScrollPos > prevScrollpos) {
+    document.querySelector(".navbar").style.top = " -50px";
     // document.getElementById("navbar").style.top = " -50";
 
   }

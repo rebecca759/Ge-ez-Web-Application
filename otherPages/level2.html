@@ -23,24 +23,28 @@
             <a class="navbar-brand custom-brand" href="../index.html">የኔታ</a>
         </li>
 
-        <div class="collapse navbar-collapse">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fas fa-hamburger"></i></span>
+       </button>
+
+        <div class="collapse navbar-collapse"  id="colNav">
             <ul class="navbar-nav">
                 <li class="nav-item ml-4 mr-5">
                     <a class="nav-link" href="../index.html">መነሻ</a>
                 </li>
                 <li class="nav-item dropdown mr-5"> 
-                    <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="./learn.html" role="button" aria-haspopup="true" aria-expanded="false">ትምህርት</a>
+                    <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ትምህርት</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="level1.html">ደረጃ አንድ</a>
+                        <a class="dropdown-item" href="./learn.html">ትምህርት</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item " href="level1.html">ደረጃ አንድ</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item active" href="./level2.html">ደረጃ ሁለት</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="./level3.html">ደረጃ ሶስት</a>
                     </div>
                 </li>
-                <li class="nav-item mr-5">
-                    <a class="nav-link" href="./games.html">ጨዋታዎች</a>
-                </li>
+               
                 <li class="nav-item mr-5">
                     <a class="nav-link" href="./about.html">ስለ እኛ</a>
                 </li>
@@ -58,30 +62,121 @@
             <div class="col-4 left-nav">
               <div class="list-group my-list" id="list-tab" role="tablist">
                 <a class="list-group-item list-group-item-action active-learn py-3 learn-nav" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">የግዕዝ ቃላት</a>
-                <a class="list-group-item list-group-item-action py-3 learn-nav" id="list-profile-list text-center" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">ዓረፍተ ነገር በግዕዝ</a>
-                <a class="list-group-item list-group-item-action py-3 learn-nav" id="list-test-list text-center" data-toggle="list" href="#list-test" role="tab" aria-controls="test">ፈተና</a>
+                <a class="list-group-item list-group-item-action py-3 learn-nav sent_tab disabled" id="list-profile-list text-center" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">ዓረፍተ ነገር በግዕዝ</a>
+                <a class="list-group-item list-group-item-action py-3 learn-nav test_tab disabled" id="list-test-list text-center" data-toggle="list" href="#list-test" role="tab" aria-controls="test">ፈተና</a>
               </div>
             </div>
+            <!-- Ge'ez verb -->
             <div class="col-8">
               <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
                     <h1 class="text-center title-learn mb-5">የግዕዝ ቃላት / ግሶች</h1>
-                    <div class="letter-container py-5 mt-1 text-center">
+                    <div class="letter-container">
+                        <h2 class="ml-4 light mt-4"> ስለ ግስ</h2>
+                        <p class="text-justify px-2">  ትምህርት ግዕዝ እንማር ፋብሪካው በአማራ ክልል ቡሬ ከተማ የሚገኝ ሲሆን 4.5 ቢሊዮን ብር ወጪ 
+                            እንደተደረገበትም ከድርጅቱ ያገኘነው መረጃ ይጠቁማል። የበላይነህ ክንዴ ግሩፕ አካል የሆነው ፌቤላ ኢንደስቱሪያል ኮምፕሌክስ
+                            በሙሉ አቅሙ ወደ ሥራ ሲገባ በቀን 1.5 ሚሊዮን ሊትር የዘይት ምርቶች ለኢትዮጵያ ገበያ የማቅረብ አቅም አለው ተብሏል።
+                            በኢትዮጵያ ያለውን ከፍተኛ የዘይት ምርት ፍላጎት ለማሟላት መንግሥት በውጪ ምንዛሬ፣ የዘይት ምርት ከውጪ ወደ አገር 
+                            ውስጥ እያስገባ ይገኛል። </p>
                         
+                    </div>
+
+                    <div class="letter-container mt-5">
+                        <h2 class="ml-4 light mt-4"> የግስ አወራረድ</h2>
+                        <li class="ml-4 days mb-3 verb" ></li>
+                        <li class="ml-4 days mb-3 verbQ"></li>
+                        <li class="ml-4 days mb-3 verbA"></li>
+                        <li class="ml-4 days mb-3 verbB"></li>
+                        <li class="ml-4 days mb-3 verbM"></li>
+                        <li class="ml-4 days mb-3 verbG"></li>
+                        <li class="ml-4 days mb-3 verbW"></li>
+                        
+                    </div>
+
+                    <div class="letter-container mt-5">
+                        <h2 class="ml-4 light mt-4 text-center mr-5"> ግሶች</h2>
+                        <div class="row">
+
+                            <div class="col-6 ">
+                                <h3 class="ml-3"> ግዕዝ</h3>
+                            </div>
+                            <div class="col-6 ">
+                                <h3 class="ml-5"> አማርኛ</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <form class="form-inline">
+                                    <input id="search-verbG" class="form-control ml-3" type="search" placeholder="ሆሄ ፈልግ" aria-label="Search">
+                                    <button id="searchbtn-verbG" class="btn btn-outline-custom ml-2 my-sm-2" type="button">ፈልግ</button>
+                                  </form>
+                            </div>
+
+                            <div class="col-6">
+                                <form class="form-inline">
+                                    <input id="search-verbA" class="form-control ml-5" type="search" placeholder="ሆሄ ፈልግ" aria-label="Search">
+                                    <button id="searchbtn-verbA" class="btn btn-outline-custom ml-2 my-sm-2" type="button">ፈልግ</button>
+                                  </form>
+                            </div>
+
+                        </div>
 
                         
                     </div>
-                </div>
-                <!-- Ge'ez Numbers -->
-                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                    <h1 class="text-center title-learn mb-5">አረፍተ ነገር በግዕዝ</h1>
-                    <div class="letter-container py-5 mt-1 text-center"></div>
-                    
-                </div>
-                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                    <h1 class="text-center title-learn mb-5">ቀናትና ወቅቶች በግዕዝ</h1>
-                    <div class="letter-container py-5 mt-1 text-center"></div>
 
+
+                </div>
+                <!-- Ge'ez Sentences -->
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                    <h1 class="text-center title-learn mb-5 text-center">ዓረፍተ ነገር በግዕዝ</h1>
+                        <div class="letter-container">
+                            <h2 class="ml-4 light mt-4"> ስለ ዓረፍተ ነገር</h2>
+                            <p class="text-justify px-2">  ትምህርት ግዕዝ እንማር ፋብሪካው በአማራ ክልል ቡሬ ከተማ የሚገኝ ሲሆን 4.5 ቢሊዮን ብር ወጪ 
+                                እንደተደረገበትም ከድርጅቱ ያገኘነው መረጃ ይጠቁማል። የበላይነህ ክንዴ ግሩፕ አካል የሆነው ፌቤላ ኢንደስቱሪያል ኮምፕሌክስ
+                                በሙሉ አቅሙ ወደ ሥራ ሲገባ በቀን 1.5 ሚሊዮን ሊትር የዘይት ምርቶች ለኢትዮጵያ ገበያ የማቅረብ አቅም አለው ተብሏል።
+                                በኢትዮጵያ ያለውን ከፍተኛ የዘይት ምርት ፍላጎት ለማሟላት መንግሥት በውጪ ምንዛሬ፣ የዘይት ምርት ከውጪ ወደ አገር 
+                                ውስጥ እያስገባ ይገኛል። </p>
+                            
+                        </div>
+
+                        <div class="letter-container mt-5">
+                            <h2 class=" light mt-4 text-center">  ስላምታ በግዕዝ</h2>
+
+                            <div class="row">
+                                <div class="col-5 mt-4 ml-3">
+                                    <h3 class="ml-3 mt-3 text-center"> ግዕዝ</h3>
+                                </div>
+                                <div class="col-5 mt-4 ml-3">
+                                    <h3 class="mr-3 mt-3 text-center"> አማርኛ</h3>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-5  ml-3" >
+                                    
+                                    <h5 class="ml-3 mt-3"> ሰላም ለከ </h5>
+                                    <h5 class="ml-3 mt-3"> ሰላም ለኪ </h5>
+                                    <h5 class="ml-3 mt-3"> ሰላም ለክሙ </h5>
+                                    <h5 class="ml-3 mt-3"> ሰላም ለክን </h5>
+                                    <h5 class="ml-3 mt-3"> ሰላም ለሊሁ </h5>
+                                    
+                                </div> 
+
+                                <div class="col-5 mr-3 " >
+                                    
+                                    <h5 class="mr-3 mt-3 text-right"> ሰላም ለአንተ </h5>
+                                    <h5 class="mr-3 mt-3 text-right"> ሰላም ለአንቺ </h5>
+                                    <h5 class="mr-3 mt-3 text-right"> ሰላም ለእናንተ </h5>
+                                    <h5 class="mr-3 mt-3 text-right"> ሰላም ለእናንተ </h5>
+                                    <h5 class="mr-3 mt-3 text-right"> ሰላም ለእርሱ </h5>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+                    
                 </div>
                 
                 <div class="tab-pane fade" id="list-test" role="tabpanel" aria-labelledby="list-test-list">
@@ -128,6 +223,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Custom Javascript -->
-    <script src="../assets/js/script.js"></script>
+    <script type="module" src="../assets/js/level2Db.js"></script>
+    <script src="../assets/js/level2.js"></script>
+
+    <!-- Dexie API -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/3.0.3/dexie.min.js" integrity="sha512-aEtNzq8X5E0ambgeM68H174SOXaANJ6wDqJ0TuVIx4R2J4fRdUA0nLzx0faA1mmViqb+r0VX7cOXkskxyJENUA==" crossorigin="anonymous"></script> 
+
 </body>
 </html>

@@ -23,7 +23,11 @@
             <a class="navbar-brand custom-brand" href="../index.html">የኔታ</a>
         </li>
 
-        <div class="collapse navbar-collapse">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fas fa-hamburger"></i></span>
+       </button>
+
+        <div class="collapse navbar-collapse"  id="colNav">
             <ul class="navbar-nav">
                 <li class="nav-item ml-4 mr-5">
                     <a class="nav-link" href="../index.html">መነሻ</a>
@@ -31,16 +35,16 @@
                 <li class="nav-item dropdown mr-5"> 
                     <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="./learn.html" role="button" aria-haspopup="true" aria-expanded="false">ትምህርት</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="level1.html">ደረጃ አንድ</a>
+                        <a class="dropdown-item" href="./learn.html">ትምህርት</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item " href="level1.html">ደረጃ አንድ</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="./level2.html">ደረጃ ሁለት</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item active" href="./level3.html">ደረጃ ሶስት</a>
                     </div>
                 </li>
-                <li class="nav-item mr-5">
-                    <a class="nav-link" href="./games.html">ጨዋታዎች</a>
-                </li>
+                
                 <li class="nav-item mr-5">
                     <a class="nav-link" href="./about.html">ስለ እኛ</a>
                 </li>
@@ -58,31 +62,97 @@
             <div class="col-4 left-nav">
               <div class="list-group my-list" id="list-tab" role="tablist">
                 <a class="list-group-item list-group-item-action active-learn py-3 learn-nav" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">የግዕዝ ቅኔዎች</a>
-                <a class="list-group-item list-group-item-action py-3 learn-nav" id="list-profile-list text-center" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">ፈተና</a>
+                <a class="list-group-item list-group-item-action py-3 learn-nav test_tab disabled" id="list-profile-list text-center" data-toggle="list" href="#list-test" role="tab" aria-controls="profile">ፈተና</a>
               </div>
             </div>
             <div class="col-8">
-              <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                    <h1 class="text-center title-learn mb-5">የግዕዝ ቅኔ</h1>
-                    <div class="letter-container py-5 mt-1 text-center">  
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                        <h1 class="text-center title-learn mb-5">የግዕዝ ቅኔ</h1>
+                        <div class="letter-container">  
+                            <h2 class="ml-4 light mt-4 text-center"> ስለ ቅኔ</h2>
+                            <p class="text-justify px-2">  የግእዜን ቅኔ የጀመረው በሰሜን ኢትዮጵያ በትግራይ ክፍለ ሀገር ተወላጅ የኾነው የፀዋትወ ዛማ
+                                ደራሲ ኢትዮጵያዊዉ ሉቅ ቅደስ ያሬዴ ሲኾን፣ ጸዋትወ ዛማን ሲደርስ አብሮ እንደጀመረው  ይተርካል። ይኽውም በስድስተኛዉ ምእት ዓመት
+                                በዐፄ ገብረ መስቀሌ ዘመነ መንግሥት ነበር። ቅደስ ያሬድ ቅኔን የጀመረዉ ፀዋትወ ዜማን ሲደርስ ምዕራፍ በተባለው ድርሰቱ በሠራዉን ምቅናይ ነው። 
+                            </p>
+
+                        </div>
+
+                        <div class="letter-container mt-4">  
+                            <h2 class="ml-4 light mt-4 text-center"> የቅኔ ክፍሎች</h2>
+                            <h3 class="ml-4 light mt-4"> <b> ሀ. ጉባኤ ቃና፦</b> </h3>
+                            <p class="text-justify px-2">  ጉባኤ ቃና ባለ ሁለት ስንኝ የመጀመሪያ የቅኔ ክፍል ነው። ከዜማ አኳያ ዕዝልና ግእዜ ጉባኤ ቃና ተብለው 
+                                የሚከፍፈሉ ሲኾኑ፣ ከስንኞቹ ምጣኔ አኳያ ደግሞ አጭር ጉባኤ ቃና (ባለ አጭር ሐረግ) እና ረጅም ጉባኤ ቃና (ባለ ረጅም ሐረግ) ተብለው 
+                                ሊከፈሉ የሚችሉ ናቸው። የቅኔ ትምህርት የመሠረት ድንጋይ የሚጣለው ጉባኤ ቃና ላይ ነው።
+                            </p>
+                            <h3 class="ml-4 light mt-4">  <b> ለ. ዘአምሊኪየ፦</b> </h3>
+                            <p class="text-justify px-2">  ዘአምሊኪየ የሚለው ሁለተኛ የቅኔ እርከን ባለ ሦስት ቤት ሲኾን፣ የመካከለኛው ቤት መንደርደሪያ ይባላል።
+                                ዜማውም ሁልጊዜ ዕዝል ነው። የስሙን ትርጓሜ ያገኘው “አምሊኪየ አምሊኪየ እገይስ ኀቤከ” ከሚለው የዲዊት መዝሙር ነው።
+                                ዘአምሊኪየ ማለት የጌታ ምስጋና ማለት ነው። የጌታ ምስጋና እንዲህ ነው ለማለት ዘአምሊኪየ ተብሏል። 
+                            </p>
+                            <h3 class="ml-4 light mt-4"> <b> ሐ. ሚበዘኁ፦</b> </h3>
+                            <p class="text-justify px-2">  ይህ የቅኔ እርከን ሥያሜውን ያገኘው “እግዙኦ ሚበዘኁ እለ ይሳቅዩኒ”
+                                ከሚለው የዲዊት መዝሙር ሲኾን፣ ትርጉሙም የሥላሴ ምስጢራት ምንኛ የበዙ ናቸው
+                                ማልት ነው። ሚበዘኁ እንደ ዘአምሊኪየ ሦስት ቤት አለው። የመሀል ቤት ማንደርደሪያ
+                                ይባላል። የሚበዘኁ ዜማ ሁልጊዜ ዕዝል ነው። 
+                            </p>
+
+                            <h3 class="ml-4 light mt-4"> <b> መ. ዋዜማ፦</b> </h3>
+                            <p class="text-justify px-2">  ዋዜማ የተሰኘው ቅኔ በክብረ በዓላት ዋዜማ ላይ በሚደረሱ መዝሙራት ጣልቃ
+                                እየገባ የሚደረስ በመኾኑ ዋዜማ የሚለውን የራሱን ስያሜ አግኝቷል። ትርጉሙም በሰርክ የሚደረስ መስዋዕተ ስብሀት ማለት ነው።
+                            </p>
+
+                            <h3 class="ml-4 light mt-4"> <b> ሠ. ሥሊሴ፦</b> </h3>
+                            <p class="text-justify px-2">  ይህ የቅኔ ክፍል ሥያሜውን ያገኘው “ይትባረክ እግዙአብሔር አምሊከ አበዊነ”
+                                በተባለው የሠልስቱ ደቂቅ ጸሎት እየገባ የሚነገር ስለኾነ ነው። የሥላሴ ቅኔ ዜማ ሁሌጊዜ ዕዝል ሲኾን፣ ሥላሴ ማለት ሦስተኛ እየኾነ 
+                                የሚገባ ማለት ነው። 
+                            </p>
+
+                            <h3 class="ml-4 light mt-4"> <b> ረ. ዘይእዜ፦</b> </h3>
+                            <p class="text-justify px-2">  ዘይእዜ በስብሐተ ነግህ አገልግሎት ጊዜ “ይእዜ ትስእሮ ለገብርከ” በሚለው
+                                ጸሎተ ስምዖን ሊይ ስለሚገባ ዘይእዜ ተብሏል። ዘይእዜ ቅኔ ስለ ንጉሥ ክብርም ይቀርባል። ዘይእዜ አጭርና ረጅም ተብሎ በሁለት
+                                 ይከፈላል። ረጅሙ አምስት ቤት ያለውና ዜማውም ግእዝ ሲኾን፣ ውክልናውም፦ የአምስቱ አዕማደ ምስጢራትና በስብሐተ
+                                ነግህ፣ በአራት ምዕራፌ፣ በአራት ጉባኤ ቃና፣ በአምስተኛው ራሱ የመዯረሱ ምሳላ ነው።
+                                አጭር ዗ይእዛ የሚባሇው ሦስት ቤት ያሇው ሲኾን፣ “ተሰሃሇኒ እግዙኦ በከመ እበየ ሳህሌከ”
+                                የተሰኘውን የዲዊት መዜሙር እየ዗መሩ ስሇሚጀምሩት ሳህሌከ ቅኔ ተብል ይጠራሌ።
+                                ዛማውም አራራይ ነው። 
+                            </p>
+
+                            <h3 class="ml-4 light mt-4"> <b> ሐ. ሚበዘኁ፦</b> </h3>
+                            <p class="text-justify px-2">  ይህ የቅኔ እርከን ሥያሜውን ያገኘው “እግዙኦ ሚበዘኁ እለ ይሳቅዩኒ”
+                                ከሚለው የዲዊት መዝሙር ሲኾን፣ ትርጉሙም የሥላሴ ምስጢራት ምንኛ የበዙ ናቸው
+                                ማልት ነው። ሚበዘኁ እንደ ዘአምሊኪየ ሦስት ቤት አለው። የመሀል ቤት ማንደርደሪያ
+                                ይባላል። የሚበዘኁ ዜማ ሁልጊዜ ዕዝል ነው። 
+                            </p>
+
+                        </div>
+
+                        <div class="letter-container mt-4">
+                            <h2 class="ml-4 light mt-4 text-center"> ምሳሌዎች</h2>
+                            <h3 class="ml-2"> <b> ቅኔ፡</b> </h3>
+                            <p class="text-justify px-2 qene">አመ ወድቀ ግዕዝ አረጋዊ በዘሳባውያን ፍና፡፡ ለአንሥዖቱ ትውረጽ እንታክቲ ወለተ ምሁራን ህሊና፡፡ 
+                            </p>
+                            <h3 class="ml-2"> <b> ፍቺ፡</b> </h3>
+                            <p class="text-justify px-2 difinitioin">  ሽማግሌውን ግዕዝ በሳባውያን ጎዳና ላይ በወደቀ ጊዜ፤ የምሁራን ህሊና የሆነች ሴት ታነሳው ዘንድ ትሮጣለች፡፡</p>
+                            <h3 class="ml-2"> <b> ምስጢር፡</b> </h3>
+                            <p class="text-justify px-2 secret">
+                                አንድ ሽማግሌ በመንገድ ላይ ሲወድቅ አንዲት ሴት ታነሳው ዘንድ እንደምትሮጥ፤ ምሁራንም  </p>
+                                
+                            
+                        </div>
+
+                        <div class="ml-3 text-center mt-4 ml-5 next"><a class="btn btn-custom "> ቀጣይ </a></div>
+                        
+                    </div>
+
+                    <div class="tab-pane fade" id="list-test" role="tabpanel" aria-labelledby="list-test-list">
+                        <h1 class="text-center title-learn mb-5">እራስህን ፈትን</h1>
+                        <div class="letter-container py-5 mt-1 text-center"></div>
                     </div>
                 </div>
-
-                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                    <h1 class="text-center title-learn mb-5">አረፍተ ነገር በግዕዝ</h1>
-                    <div class="letter-container py-5 mt-1 text-center"></div>
-                    
-                </div>
-                
-                <div class="tab-pane fade" id="list-test" role="tabpanel" aria-labelledby="list-test-list">
-                    <h1 class="text-center title-learn mb-5">እራስህን ፈትን</h1>
-                    <div class="letter-container py-5 mt-1 text-center"></div>
-                </div>
-              </div>
             </div>
-          </div>
             
+        </div>
     </div>
 
         
@@ -119,6 +189,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Custom Javascript -->
-    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/level3Db.js" type="module"></script>
+    <script src="../assets/js/level3.js"></script>
+
+    <!-- Dexie API -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/3.0.3/dexie.min.js" integrity="sha512-aEtNzq8X5E0ambgeM68H174SOXaANJ6wDqJ0TuVIx4R2J4fRdUA0nLzx0faA1mmViqb+r0VX7cOXkskxyJENUA==" crossorigin="anonymous"></script> 
+
+
 </body>
 </html>
