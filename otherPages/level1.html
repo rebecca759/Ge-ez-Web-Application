@@ -38,9 +38,9 @@
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="./learn.html">ትምህርት</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item active" href="level1.html">ደረጃ አንድ</a>
+                        <a class="dropdown-item active" href="registerLogin.html">ደረጃ አንድ</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="./level2.html">ደረጃ ሁለት</a>
+                        <a class="dropdown-item" id="d2" href="#d2">ደረጃ ሁለት</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="./level3.html">ደረጃ ሶስት</a>
                     </div>
@@ -370,11 +370,12 @@
                                 <button class="restart">እንደገና ለመፈተን</button>
                                 <button class="quit">ለመውጣት</button>
                             </div>
+                            <div class="link buttons">
+                                <a href="./memoryGames.html"><button class="card">ጨዋታ</button></a>
+                                <a href="./certificate.html"><button class="game">የምስክር ወረቀት</button></a>
+                            </div>
                         </div>
-                        <div class="link">
-                            <button class="card"></button>
-                            <button class="game"></button>
-                        </div>
+                        
                     </div>
                     <!-- end -->
                 </div>
@@ -418,10 +419,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Custom Javascript -->
-    <script src="../assets/js/level1.js" type="module"></script>
     <script src="../assets/js/question.js"></script>
     <script src="../assets/js/quz.js"></script>
 
+    <script src="../assets/js/level1.js" type="module"></script>
+    
      <!-- Dexie API -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/3.0.3/dexie.min.js" integrity="sha512-aEtNzq8X5E0ambgeM68H174SOXaANJ6wDqJ0TuVIx4R2J4fRdUA0nLzx0faA1mmViqb+r0VX7cOXkskxyJENUA==" crossorigin="anonymous"></script> 
 </body>
