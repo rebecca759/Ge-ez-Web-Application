@@ -24,7 +24,7 @@ const letTab = document.querySelector('.lettersTab');
 const numTab = document.querySelector('.numbers-tab');
 const daysTab = document.querySelector('.days-tab');
 const monthTab = document.querySelector('.monthsTab');
-const testTab = document.querySelector('.testTab')
+const testTab = document.querySelector('.testTab');
 
 //Get Each letter from HTML
 const letter_1 = document.querySelector('.letter-1');
@@ -1723,4 +1723,5 @@ function alertTest(e) {
     
     }
 }
+
 

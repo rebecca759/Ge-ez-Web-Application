@@ -642,15 +642,6 @@ h3 {
     padding: 0 30px;
     border-top: 1px solid lightgrey;
 }
-/* .link{
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0 30px;
-    border-top: 1px solid lightgrey;
-} */
-
 .info_box .buttons button{
     margin: 0 5px;
     height: 40px;
@@ -929,14 +920,7 @@ footer button.show{
 .buttons button.restart:hover{
     background: #0263ca;
 }
-/* .link button.card{
-    color: #fff;
-    background: #007bff;
-}
 
-.link button.card:hover{
-    background: #0263ca;
-} */
 .buttons button.quit{
     color: #007bff;
     background: #fff;
@@ -946,15 +930,6 @@ footer button.show{
     color: #fff;
     background: #007bff;
 }
-/* .buttons button.game{
-    color: #007bff;
-    background: #fff;
-}
-
-.buttons button.game:hover{
-    color: #fff;
-    background: #007bff;
-} */
 
 .inactiveLink {
     pointer-events: none;
@@ -983,4 +958,34 @@ footer button.show{
 
 .person-icon {
     margin-right: 80px;
+}
+.game{
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    display: inline;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                color: #007bff;
+                background: #fff;
+}
+.card{
+    position: absolute;
+    top: 100%;
+    left: 75%;
+    display: inline;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                color: #007bff;
+                background: #fff;
+}
+.card:hover{
+    color: #fff;
+    background: #007bff;
+}
+.game:hover{
+    color: #fff;
+    background: #007bff;
 }
