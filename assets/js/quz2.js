@@ -13,7 +13,6 @@ const link = document.querySelector(".link");
 const card = document.querySelector(".card");
 const game = document.querySelector(".game");
 const dereja2 = document.querySelector('#d2');
-const dereja3 = document.querySelector("#d3");
 
 
 // if startQuiz button clicked
@@ -224,14 +223,9 @@ function queCounter(index){
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
 dereja2.onclick = function (){
-    //var a = document.querySelector('#d2');
     if (userScore > 10) {
-      dereja2.setAttribute('href', './level2.html')
-      dereja3.setAttribute('href', './level3.html')
-    }
-else{
-    alert("ይህን ደረጃ ለመክፈት ፈተናውን መፈተን እና ከ 10 በላይ ማምጣት ይጠበቅበዎታል!")
-}}
+      dereja2.setAttribute('href', './level3.html')
+    }}
     game.style.visibility = "hidden";
     card.style.visibility = "hidden";
        

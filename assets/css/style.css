@@ -423,12 +423,14 @@ h3 {
 }
 
 .p1_image {
-    width: 100%;
-    height: 30%;
+    width: 50%;
+    height: 60%;
     border-radius: 50%;
     margin-bottom: 30px;
 }
-
+.yegna{
+        background-color: bisque;
+}
 #content_bar {
     padding: auto;
     position: relative;
@@ -557,6 +559,91 @@ h3 {
     left: 75%;
     top: 23%;
 }
+
+.circle {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 50%;
+    font-size: 40px;
+    text-align: center;
+    background: rgba(236, 219, 231, 0.829);
+    border: 1px solid rgb(182, 182, 182);
+  }
+  .yegna{
+      height: 45vh;
+      width: 45vh;
+  }
+
+
+.faq {
+    background-color:  rgb(247, 240, 233);
+    font-family: 'Work Sans', sans-serif;
+}
+
+.card-faq:hover {
+    background-color: rgb(247, 245, 246)
+}
+
+.faq-icon {
+    padding-left: 180px;
+}
+
+.btn:focus, .btn:active {
+    box-shadow: none;
+}
+
+.about {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.team-img {
+    height: 210px;
+    width: 210px;
+}
+
+.my-btn {
+    background-color: rgba(134, 110, 127, 0.829);
+    color: #fff;
+}
+
+.my-btn:hover {
+    background-color: rgba(134, 110, 127, 0.6); 
+    color: #fff;
+}
+
+.no-outline:focus, .no-outline:active {
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+.form-rounded {
+    border-radius: 1rem;
+    }
+
+::placeholder {
+    color: gray;
+    font-weight: bold;
+}
+
+.about-icons {
+   background-color: rgba(134, 110, 127, 0.829);
+   color: white;
+   font-size: 20px;
+}
+
+.map {
+    height: 58vh;
+}
+
+
 ::selection{
     color: #fff;
     background: #007bff;
@@ -642,7 +729,6 @@ h3 {
     padding: 0 30px;
     border-top: 1px solid lightgrey;
 }
-
 .info_box .buttons button{
     margin: 0 5px;
     height: 40px;
@@ -932,7 +1018,6 @@ footer button.show{
     background: #007bff;
 }
 
-
 .inactiveLink {
     pointer-events: none;
     cursor: default;
@@ -960,4 +1045,35 @@ footer button.show{
 
 .person-icon {
     margin-right: 80px;
+}
+
+.game{
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    display: inline;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                color: #007bff;
+                background: #fff;
+}
+.card{
+    position: absolute;
+    top: 100%;
+    left: 75%;
+    display: inline;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                color: #007bff;
+                background: #fff;
+}
+.card:hover{
+    color: #fff;
+    background: #007bff;
+}
+.game:hover{
+    color: #fff;
+    background: #007bff;
 }

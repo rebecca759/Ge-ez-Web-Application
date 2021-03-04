@@ -38,22 +38,18 @@
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="./learn.html">ትምህርት</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item active" href="level1.html">ደረጃ አንድ</a>
+                        <a class="dropdown-item active" href="registerLogin.html">ደረጃ አንድ</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="./level2.html">ደረጃ ሁለት</a>
+                        <a class="dropdown-item" id="d2" href="#d2">ደረጃ ሁለት</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="./level3.html">ደረጃ ሶስት</a>
+                        <a class="dropdown-item" id="d3" href="#d3">ደረጃ ሶስት</a>
                     </div>
                 </li>
+                
                 <li class="nav-item mr-5">
-                    <a class="nav-link" href="./games.html">ጨዋታዎች</a>
+                    <a class="nav-link" href="./about1.html">ስለ እኛ</a>
                 </li>
-                <li class="nav-item mr-5">
-                    <a class="nav-link" href="./about.html">ስለ እኛ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">አግኙን</a> 
-                </li>
+                
             </ul>
         </div>
 
@@ -310,6 +306,7 @@
                 </div>
                 <div class="tab-pane fade" id="list-test" role="tabpanel" aria-labelledby="list-test-list">
                     <div class="level1-test">
+                        <!-- start -->
                         <!-- start Quiz button -->
                         <div class="start_btn"><button>ፈተና ጀምር</button></div>
 
@@ -371,8 +368,14 @@
                                 <button class="restart">እንደገና ለመፈተን</button>
                                 <button class="quit">ለመውጣት</button>
                             </div>
+                            <div class="link buttons">
+                                <a href="./memoryGames.html" target="_blank"><button class="card">ጨዋታ</button></a>
+                                <a href="./certificate.html" target="_blank"><button class="game">የምስክር ወረቀት</button></a>
+                            </div>
                         </div>
+                        
                     </div>
+                    <!-- end -->
                 </div>
               </div>
             </div>
@@ -414,10 +417,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Custom Javascript -->
-    <script src="../assets/js/level1.js" type="module"></script>
     <script src="../assets/js/question.js"></script>
     <script src="../assets/js/quz.js"></script>
 
+    <script src="../assets/js/level1.js" type="module"></script>
+    
      <!-- Dexie API -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/3.0.3/dexie.min.js" integrity="sha512-aEtNzq8X5E0ambgeM68H174SOXaANJ6wDqJ0TuVIx4R2J4fRdUA0nLzx0faA1mmViqb+r0VX7cOXkskxyJENUA==" crossorigin="anonymous"></script> 
 </body>

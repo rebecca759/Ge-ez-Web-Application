@@ -41,18 +41,14 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item active" href="./level2.html">ደረጃ ሁለት</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="./level3.html">ደረጃ ሶስት</a>
+                        <a class="dropdown-item" id="d2" href="#d2">ደረጃ ሶስት</a>
                     </div>
                 </li>
+               
                 <li class="nav-item mr-5">
-                    <a class="nav-link" href="./games.html">ጨዋታዎች</a>
+                    <a class="nav-link" href="./about1.html">ስለ እኛ</a>
                 </li>
-                <li class="nav-item mr-5">
-                    <a class="nav-link" href="./about.html">ስለ እኛ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">አግኙን</a> 
-                </li>
+                
             </ul>
         </div>
     </nav>
@@ -182,8 +178,74 @@
                 </div>
                 
                 <div class="tab-pane fade" id="list-test" role="tabpanel" aria-labelledby="list-test-list">
-                    <h1 class="text-center title-learn mb-5">እራስህን ፈትን</h1>
-                    <div class="letter-container py-5 mt-1 text-center"></div>
+                    <div class="level1-test">
+                        <!-- start Quiz button -->
+                        <div class="start_btn"><button>ፈተና ጀምር</button></div>
+
+                        <!-- Info Box -->
+                        <div class="info_box">
+                            <div class="info-title"><span>ለፈተናው የሚረዱ ህጎች</span></div>
+                            <div class="info-list">
+                                <div class="info">1. ለእያንዳንዱ ጥያቄ <span>15 ሰከንድ</span> ብቻ ነው እሚሰጠው፡፡</div>
+                                <div class="info">2. አንዴ ያሰቡትን መልስ ከመረጡ በኋላ, ድጋሚ መምረጥ አይችሉም፡፡</div>
+                                <div class="info">3. ሰአት ካለቀ በኋላ ምንም አይነት ምርጫ መምረጥ አይቻልም፡፡</div>
+                                <div class="info">4. ፈተናውን ከጀመሩ በሃላ ፈተናውን ማቃረጥ አይፈቀድም፡፡</div>
+                                <div class="info">5. ውጤት እሚያገኙት ትክክለኛው መልስ ተቆጥሮ ነው፡፡</div>
+                            </div>
+                            <div class="buttons">
+                                <button class="quit">ለመውጣት</button>
+                                <button class="restart">ለመቀጠል</button>
+                            </div>
+                        </div>
+
+                        <!-- Quiz Box -->
+                        <div class="quiz_box">
+                            <header>
+                                <div class="title">ደረጃ 1 ፈተና</div>
+                                <div class="timer">
+                                    <div class="time_left_txt">ቀሪ ሰአት</div>
+                                    <div class="timer_sec">15</div>
+                                </div>
+                                <div class="time_line"></div>
+                            </header>
+                            <section>
+                                <div class="que_text">
+                                    <!-- Here I've inserted question from JavaScript -->
+                                </div>
+                                <div class="option_list">
+                                    <!-- Here I've inserted options from JavaScript -->
+                                </div>
+                            </section>
+
+                            <!-- footer of Quiz Box -->
+                            <footer>
+                                <div class="total_que">
+                                    <!-- Here I've inserted Question Count Number from JavaScript -->
+                                </div>
+                                <button class="next_btn">ቀጣይ ጥያቄ</button>
+                            </footer>
+                        </div>
+
+                        <!-- Result Box -->
+
+                        <div class="result_box">
+                            <div class="icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="complete_text">ፈተናውን ጨርሰዋል!</div>
+                            <div class="score_text">
+                                <!-- Here I've inserted Score Result from JavaScript -->
+                            </div>
+                            <div class="buttons">
+                                <button class="restart">እንደገና ለመፈተን</button>
+                                <button class="quit">ለመውጣት</button>
+                            </div>
+                            <div class="link buttons">
+                                <a href="./scrambleGame.html" target="_blank"><button class="card">ጨዋታ</button></a>
+                                <a href="./certificate2.html" target="_blank"><button class="game">የምስክር ወረቀት</button></a>
+                            </div>
+                        </div>
+                        
                 </div>
               </div>
             </div>
@@ -220,6 +282,8 @@
     </div>
     
     <!-- Bootsrap Javascript -->
+    <script src="../assets/js/quz2.js"></script>
+    <script src="../assets/js/question.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

@@ -1,9 +1,9 @@
-const productdb = (dbname,table1,table2,table3, table4, table5, table6) => {
+const productdb = (dbname,table1,table2,table3, table4, table5, table6,t) => {
     //create database
     
     const db = new Dexie(dbname)
 
-    db.version(1).stores(table1,table2, table3, table4, table5, table6);
+    db.version(1).stores(table1,table2, table3, table4, table5, table6,7);
 
     db.open();
 
