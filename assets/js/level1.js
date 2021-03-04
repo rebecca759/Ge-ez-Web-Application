@@ -7,9 +7,10 @@ const db = productdb("GeezDB",{
     numbers: `++id, amharic, geez, numGeez`, 
     months: `++id, amharic, geez`,
     //verb: `++id, verbG, verbAm, verbQ, verbA, verbB, verbM, verbGi, verbW`
-
-
 });
+
+var count = 0;
+var removed_num = false;
 
 //UI Vars
 const list_item = document.querySelector('.my-list');
@@ -19,6 +20,11 @@ const letter_input = document.querySelector('#search-letters');
 const search_button = document.querySelector('#searchlet-btn');
 const searchnums_button = document.querySelector('#searchnums-btn');
 const number_input = document.querySelector('#search-nums');
+const letTab = document.querySelector('.lettersTab');
+const numTab = document.querySelector('.numbers-tab');
+const daysTab = document.querySelector('.days-tab');
+const monthTab = document.querySelector('.monthsTab');
+const testTab = document.querySelector('.testTab')
 
 //Get Each letter from HTML
 const letter_1 = document.querySelector('.letter-1');
@@ -594,12 +600,26 @@ search_button.addEventListener('click',searchLetters);
 searchnums_button.addEventListener('click',searchNumbers);
 
 function change(e) {
+    var active;
     for (let i = 0; i < lists.length; i++) {
+        if (lists[i].style.color == 'white') {
+            active = lists[i].textContent;
+        }
+
         lists[i].style.background = 'white';
         lists[i].style.color = 'black';
     }
-    e.target.style.background = '#a5702a';
-    e.target.style.color = 'white';
+
+    if (active == "የግዕዝ ፊደላት") {
+        if (e.target.textContent == "ቀናትና ወቅቶች በግዕዝ") {
+            alert("መጀመርያ ይህንን ገጽ ጨርሱ")
+        }
+    }
+    if ( !(e.target.classList.contains('disabled')) ) {
+        e.target.style.background = '#a5702a';
+        e.target.style.color = 'white';
+    }
+    
 }
 
 function changeButtons(e) {
@@ -1723,4 +1743,76 @@ db.months.get(13,function(firstRow) {
 })
 
 
+numTab.addEventListener('click',alertNum)
+daysTab.addEventListener('click',alertDay)
+monthTab.addEventListener('click',alertMonth)
+testTab.addEventListener('click',alertTest)
+
+function alertNum(e) {
+    console.log('he')
+    if (e.target.classList.contains('disabled')) {
+        alert("ወደ ቁጥር ገጽ ለመሄድ ይህንን ገጽ ይጨርሱ")
+    }
+
+    window.onscroll = function(ev) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight-2) {
+            // you're at the bottom of the page
+            console.log('scrolld')
+            numTab.classList.remove('disabled')
+            removed_num = true;
+
+        }
+    
+    }
+}   
+
+function alertDay(e) {
+    if (e.target.classList.contains('disabled')) {
+        alert("ወደ ወራት ገጽ ለመሄድ ይህንን ገጽ ይጨርሱ")
+    }
+
+    window.onscroll = function(ev) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight-2) {
+            // you're at the bottom of the page
+            console.log('scrolld')
+            daysTab.classList.remove('disabled')
+            removed_num = true;
+
+        }
+    
+    }
+}
+
+function alertMonth(e) {
+    if (e.target.classList.contains('disabled')) {
+        alert("ወደ ወራት ገጽ ለመሄድ ይህንን ገጽ ይጨርሱ")
+    }
+
+    window.onscroll = function(ev) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight-2) {
+            // you're at the bottom of the page
+            console.log('scrolld')
+            monthTab.classList.remove('disabled')
+            removed_num = true;
+
+        }
+    
+    }
+}
+
+function alertTest(e) {
+    if (e.target.classList.contains('disabled')) {
+        alert("ፈተና ለመፈተን ይህንን ገጽ ይጨርሱ")
+    }
+
+    window.onscroll = function(ev) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight-2) {
+            // you're at the bottom of the page
+            console.log('scrolld')
+            testTab.classList.remove('disabled')
+            removed_num = true;
+        }
+    
+    }
+}
 

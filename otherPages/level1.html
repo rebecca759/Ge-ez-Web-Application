@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ግእዝ - ደረጃ አንድ</title>
+    <title>ግእዝ ደረጃ አንድ</title>
     <!-- Bootsrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/svg" href="../assets/images/icon-africa.png" />
@@ -23,7 +23,12 @@
             <a class="navbar-brand custom-brand" href="../index.html">የኔታ</a>
         </li>
 
-        <div class="collapse navbar-collapse">
+        <button class="navbar-toggler mb-2" type="button" data-toggle="collapse" data-target="#colNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fas fa-hamburger"></i></span>
+       </button>
+
+    
+        <div class="collapse navbar-collapse"  id="colNav">
             <ul class="navbar-nav">
                 <li class="nav-item ml-4 mr-5">
                     <a class="nav-link" href="../index.html">መነሻ</a>
@@ -51,20 +56,30 @@
                 </li>
             </ul>
         </div>
-    </nav>
 
+        <div class="nav-item dropdown remove-list mt-3">
+            <a class="nav-link dropdown-toggle person-icon" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="far fa-user user-icon mb-2"></i>
+            </a>
+            <ul class="dropdown-menu w-75" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="./registerLogin.html"><i class="fas fa-user-plus mr-2"></i>ተመዝገብ</a>
+              <a class="dropdown-item" href="./registerLogin.html"><i class="fas fa-sign-in-alt mr-2"></i> ግባ</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt mr-2"></i>ውጣ</a>
+            </ul>
+        </div>
+    </nav>
 
     <h1 class="level_title ml-5 pl-5 mt-5 mb-5">ደረጃ አንድ</h1>
 
     <div class="container">
         <div class="row ml-5">
             <div class="col-3 left-nav">
-              <div class="list-group my-list" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action active-learn py-3 learn-nav " id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">የግዕዝ ፊደላት</a>
-                <a class="list-group-item list-group-item-action py-3 learn-nav numberTab" id="list-profile-list text-center" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">የግዕዝ ቁጥሮች</a>
-                <a class="list-group-item list-group-item-action py-3 learn-nav " id="list-messages-list text-center" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">ቀናትና ወቅቶች በግዕዝ</a>
-                <a class="list-group-item list-group-item-action py-3 learn-nav" id="list-settings-list text-center" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">ወራት በግዕዝ</a>
-                <a class="list-group-item list-group-item-action py-3 learn-nav" id="list-test-list text-center" data-toggle="list" href="#list-test" role="tab" aria-controls="test">ፈተና</a>
+              <div class="list-group my-list list" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active-learn py-3 learn-nav lettersTab" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">የግዕዝ ፊደላት</a>
+                <a class="list-group-item list-group-item-action py-3 learn-nav numbers-tab disabled" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">የግዕዝ ቁጥሮች</a>
+                <a class="list-group-item list-group-item-action py-3 learn-nav days-tab disabled" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">ቀናትና ወቅቶች በግዕዝ</a>
+                <a class="list-group-item list-group-item-action py-3 learn-nav monthsTab disabled" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">ወራት በግዕዝ</a>
+                <a class="list-group-item list-group-item-action py-3 learn-nav testTab disabled" id="list-test-list" data-toggle="list" href="#list-test" role="tab" aria-controls="test">ፈተና</a>
 
               </div>
             </div>
@@ -276,7 +291,6 @@
 
 <div class="months">
                         <div class="ml-5">
-                            <h2 class="ml-4 light mt-4 mb-4">ወራት በግዕዝ</h2>
                             <li class="ml-4 days mb-4 month-1"></li>
                             <li class="ml-4 days mb-4 month-2"></li>
                             <li class="ml-4 days mb-4 month-3"></li>
@@ -400,7 +414,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Custom Javascript -->
-    <script src="../assets/js/script.js" type="module"></script>
+    <script src="../assets/js/level1.js" type="module"></script>
     <script src="../assets/js/question.js"></script>
     <script src="../assets/js/quz.js"></script>
 
