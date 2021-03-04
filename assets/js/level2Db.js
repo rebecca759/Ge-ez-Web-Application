@@ -59,16 +59,7 @@ bulkcreate(db.verb, {
     verbW: "ሐዋሪያት ፡ የሄዱ ሴቶች",
 })
 
-bulkcreate(db.verb, {
-    verbG: "ሖረ",
-    verbAm: "ሄደ",
-    verbQ: "ይሑር ፡  ይሂድ (ትዕዛዝ)",
-    verbA: "ሐዊር ፡ መሄድ",
-    verbB: "ሐዋሪ ፡ የሄደ ወንድ",
-    verbM: "ሐዋሪያን ፡ የሄዱ ወንዶች",
-    verbGi: "ሐዋሪተ ፡ የሄደች ሴት",
-    verbW: "ሐዋሪያት ፡ የሄዱ ሴቶች",
-})
+
 
 
 
