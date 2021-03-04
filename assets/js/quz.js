@@ -9,6 +9,9 @@ const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
+const link = document.querySelector(".link");
+const card = document.querySelector(".link.card");
+const game = document.querySelector(".link.game")
 
 // if startQuiz button clicked
 start_btn.onclick = ()=>{
@@ -212,3 +215,6 @@ function queCounter(index){
     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
+// if (userScore > 1){
+//     game.innerHTML = `game`
+// }

@@ -640,6 +640,14 @@ h3 {
     padding: 0 30px;
     border-top: 1px solid lightgrey;
 }
+/* .link{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 30px;
+    border-top: 1px solid lightgrey;
+} */
 
 .info_box .buttons button{
     margin: 0 5px;
@@ -919,7 +927,14 @@ footer button.show{
 .buttons button.restart:hover{
     background: #0263ca;
 }
+/* .link button.card{
+    color: #fff;
+    background: #007bff;
+}
 
+.link button.card:hover{
+    background: #0263ca;
+} */
 .buttons button.quit{
     color: #007bff;
     background: #fff;
@@ -929,5 +944,13 @@ footer button.show{
     color: #fff;
     background: #007bff;
 }
+/* .buttons button.game{
+    color: #007bff;
+    background: #fff;
+}
 
+.buttons button.game:hover{
+    color: #fff;
+    background: #007bff;
+} */
 
