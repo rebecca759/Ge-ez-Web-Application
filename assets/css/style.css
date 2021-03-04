@@ -375,11 +375,13 @@ h3 {
 
 .p1_image {
     width: 50%;
-    height: 75%;
+    height: 60%;
     border-radius: 50%;
     margin-bottom: 30px;
 }
-
+.yegna{
+        background-color: bisque;
+}
 #content_bar {
     padding: auto;
     position: relative;
@@ -534,13 +536,14 @@ h3 {
     background: rgba(236, 219, 231, 0.829);
     border: 1px solid rgb(182, 182, 182);
   }
+  .yegna{
+      height: 45vh;
+      width: 45vh;
+  }
 
-.yegna {
-    height: 30vh;
-}
 
 .faq {
-    background-color: rgba(236, 219, 231, 0.829);
+    background-color:  rgb(247, 240, 233);
     font-family: 'Work Sans', sans-serif;
 }
 
